@@ -1,2 +1,2 @@
-# Zenodo 自动生成，不需要进版本库
+# Zenodo generates this file from its web form; keep it out of version control
 .zenodo.json
