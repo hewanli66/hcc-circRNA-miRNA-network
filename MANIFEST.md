@@ -70,7 +70,6 @@ c773be52eba3d9d1fecc044bf2986adb315d01a107460d305bda71deb7cd8909        8288  sc
 d9648088118724e49381a5ee9975ad94d749ac23ee200c57cb194a4465de43b0       13945  scripts/make_figs.py
 0329d4c599f18cf7784eda6bf9fc4be81f470c1b51b8594d3ce6c74e035f9ddf       15090  scripts/make_figs2.py
 defd4b306119a6dcde444c7ffd6ea8e568e68dc239bf29b2952ee86462333754       11270  scripts/make_figs3.py
-8a69218fc6e48aacc933880192b1201f76b3a6dabf50dc451c1c3343474370cb        4047  scripts/make_ima_parts.py
 8d010bc03b9eb323e0ccfd4d2a5948969b8d9e23a351f56cff89adda3d63615e        4654  scripts/make_submission_figures.py
 17ceed103c29d58ab6e8f20e38d0a32ecf1ea09070f9af2ab42a83a5d6375e24        6166  scripts/match_circbank_candidates.py
 2fcbb20b90b4cfddf61e7cf6f7a440f94695421553434f74a40c28173b9b1c09        7584  scripts/parse_122482.py
@@ -96,4 +95,4 @@ c1ab0c0a310f91ce49cb29ceb916819eddc94ed20f1c2deb7ea9db8f76c6b65d        8737  sc
 61a5235bd3cf3b7b833b39302d83e1b640d5945228f00fbd24ebf1959081eb3c        4950  scripts/step9_nt5dc2_support.py
 590ebf6cef2e4c5b266f541a3b1f9a96805d954481a9769c45bc82be6006bd25        7876  scripts/step9b_fallback_support.py
 
-Total: 95 files, 17.6 MB
+Total: 94 files, 17.6 MB
