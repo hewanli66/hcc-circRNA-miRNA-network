@@ -1,0 +1,28 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Wanli He
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License. You are free to share and adapt the material for any purpose, even
+commercially, provided you give appropriate credit, provide a link to the license,
+and indicate if changes were made.
+
+The full text of this license is available at:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+You should have received a copy of the license with this work. If not, see
+https://creativecommons.org/licenses/by/4.0/
+
+---
+
+NOTE ON DATA AVAILABILITY
+
+This archive contains only analysis code, derived result tables, figures and
+manuscript materials. It does NOT redistribute any primary data. The primary
+datasets are publicly available and must be obtained from their original
+repositories:
+
+  GSE122482  —  NCBI Gene Expression Omnibus
+  GSE14520   —  NCBI Gene Expression Omnibus
+  TCGA-LIHC  —  Genomic Data Commons
+  circBank   —  www.circbank.cn

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="640" viewBox="0 0 700 640">
+<rect width="700" height="640" fill="#fff"/>
+<text x="24.0" y="30.0" font-size="17" text-anchor="start" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">Figure 3  Cross-cohort concordance of prognostic effect</text>
+<text x="24.0" y="50.0" font-size="11" text-anchor="start" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">TCGA-LIHC (n=275) vs GSE14520 (n=242), hazard ratio per +1 SD</text>
+<rect x="316.5" y="70.0" width="323.5" height="490.0" fill="#e8f4ff" fill-opacity="0.5"/>
+<line x1="316.5" y1="70.0" x2="316.5" y2="560.0" stroke="#999" stroke-dasharray="5,4"/>
+<line x1="90.0" y1="358.2" x2="640.0" y2="358.2" stroke="#999" stroke-dasharray="5,4"/>
+<line x1="90.0" y1="560.0" x2="640.0" y2="70.0" stroke="#333" stroke-width="1.6"/>
+<circle cx="452.0" cy="393.5" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="485.7" cy="346.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="493.3" cy="324.7" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="485.6" cy="327.1" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="393.5" cy="406.5" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="416.0" cy="382.8" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="400.9" cy="393.9" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="459.1" cy="330.5" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="421.2" cy="364.0" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="412.8" cy="356.1" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="459.4" cy="314.5" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="415.2" cy="333.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="324.6" cy="403.0" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="341.3" cy="284.4" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="430.9" cy="307.5" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="373.7" cy="351.8" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="351.3" cy="369.3" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="323.6" cy="312.1" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="355.4" cy="362.1" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="375.3" cy="339.9" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="349.1" cy="362.8" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="251.9" cy="382.5" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="395.2" cy="320.8" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="349.8" cy="360.7" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="396.3" cy="319.1" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="383.7" cy="328.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="353.9" cy="354.3" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="244.6" cy="394.8" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="258.5" cy="383.3" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="359.4" cy="295.3" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="306.4" cy="390.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="481.0" cy="234.8" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="237.5" cy="451.1" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="281.7" cy="409.3" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="390.2" cy="311.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="349.2" cy="311.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="276.8" cy="410.8" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="356.3" cy="339.7" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="304.0" cy="353.3" r="5.5" fill="#c0392b" fill-opacity="0.8"/>
+<circle cx="357.3" cy="332.9" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="280.0" cy="398.3" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="341.7" cy="328.6" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="318.5" cy="353.2" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="362.9" cy="319.2" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<circle cx="328.3" cy="346.7" r="5.5" fill="#2e8b57" fill-opacity="0.8"/>
+<text x="246.5" y="443.1" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">HSD17B6</text>
+<text x="253.6" y="386.8" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">LPA</text>
+<text x="260.9" y="374.5" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">HGFAC</text>
+<text x="267.5" y="375.3" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">GADD45B</text>
+<text x="502.3" y="316.7" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">NUP205</text>
+<text x="494.7" y="338.6" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">RBM19</text>
+<text x="494.6" y="319.1" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">SMG5</text>
+<text x="490.0" y="226.8" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">NT5DC2</text>
+<text x="246.5" y="443.1" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">HSD17B6</text>
+<text x="285.8" y="402.8" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">CD5</text>
+<text x="368.4" y="287.3" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">BCLAF1</text>
+<text x="350.3" y="276.4" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">SREBF2</text>
+<text x="490.0" y="226.8" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">NT5DC2</text>
+<text x="290.7" y="401.3" font-size="11" text-anchor="start" fill="#1a6b45" font-weight="bold" font-family="Helvetica,Arial,sans-serif">LRCH1</text>
+<text x="154.7" y="578.0" font-size="11" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.5</text>
+<text x="82.0" y="506.4" font-size="11" text-anchor="end" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.5</text>
+<text x="219.4" y="578.0" font-size="11" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.7</text>
+<text x="82.0" y="448.7" font-size="11" text-anchor="end" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.7</text>
+<text x="316.5" y="578.0" font-size="11" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">1.0</text>
+<text x="82.0" y="362.2" font-size="11" text-anchor="end" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">1.0</text>
+<text x="478.2" y="578.0" font-size="11" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">1.5</text>
+<text x="82.0" y="218.1" font-size="11" text-anchor="end" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">1.5</text>
+<text x="640.0" y="578.0" font-size="11" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">2.0</text>
+<text x="82.0" y="74.0" font-size="11" text-anchor="end" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">2.0</text>
+<text x="365.0" y="616.0" font-size="13" text-anchor="middle" fill="#222" font-weight="normal" font-family="Helvetica,Arial,sans-serif">Hazard ratio in TCGA-LIHC</text>
+<text x="26" y="315.0" font-size="13" fill="#222" font-family="Helvetica" transform="rotate(-90 26 315.0)" text-anchor="middle">Hazard ratio in GSE14520</text>
+<text x="102.0" y="90.0" font-size="13" text-anchor="start" fill="#2e8b57" font-weight="bold" font-family="Helvetica,Arial,sans-serif">Concordant: 34 / 45 (76%)</text>
+<text x="102.0" y="108.0" font-size="11" text-anchor="start" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">green = same direction, red = opposite</text>
+</svg>

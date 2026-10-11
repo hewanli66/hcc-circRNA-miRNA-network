@@ -1,0 +1,50 @@
+# MANIFEST — SHA256 and size of every archived file
+
+fd52c1355fc7683cc93101e12b8768e5eca4c0a5ac8069b0543a743f20aaa187         961  .zenodo.json
+f55c40e478727d9ba6b1d95ed750615f5e0d3704310ffc962fe8c0210b73c084         562  CITATION.cff
+688dac76911b88df9bdcadf513fec75e2cd41044c63d2a981f0d39269bdfea0c        2867  README.md
+bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
+eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
+f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
+15a4c398089a058f6eb9c59827db03e7f57add82c56a9a03aa4f43cd86f29ba8       23060  figures/Fig2_network.svg
+1311ce7f78450ba8811b0b4474f525426762be1654d0c087034019e1f43cd6be      433694  figures/Fig3_concordance.png
+c8fed7305a1f4da44459953b42cc065d96d9ab9ab043dd877ddce9c227e87184        8514  figures/Fig3_concordance.svg
+7fdf1a5dfbd8a428594cbd8925e9bb9b34074accc40c32531bf7a16e65c58b4b      177394  figures/Fig4_immune_matrix.png
+ad9b2f6b061244688979e8c679e1fd8b1e814021dd9d787ce21faa5e879ab22e       11910  figures/Fig4_immune_matrix.svg
+45ab543bc985e2fffb304c6b17081c69218416bbd1b48ecd78516fe537709c79      458873  figures/Fig5_KM_core.png
+02f8b788d4047d4cf37771ee564fffd1c326c1469fd7b2452960531330fa09bf       53685  figures/Fig5_KM_core.svg
+2098c536c835080dd883ce3528258f7a21461b7237f4b13177a0c6b51966b3d7      908887  figures/Fig6_trinetwork.png
+60f11b76531b430db70860bcf5a0128df8e9e070b716b16757f08cd6193936f3       60621  figures/Fig6_trinetwork.svg
+c05fad5e13ddba25cc2ac9a568409652912cbd1561249e02630c877122342140      188964  figures/Fig7_qc_tiers.png
+61ec4415ba211b266dcab74443b37e7937e775b5ee0bd7b79ca809fbd3367f8b        5017  figures/Fig7_qc_tiers.svg
+55d8d8d6a487945d0451cb6384fc7e09286ad081cec66fb7f508689f4351796b        5687  manuscript/CoverLetter_SR.md
+7bc4f38561325a48ed8437e90d3e39bc5539b91c5c9c5ce93fd9196fc149a2b1       54626  manuscript/SR投稿稿_EN.docx
+46be581524efb66e572f33a6b30da0ca0a428680a2339273bad81621df0411a4       36834  manuscript/SR投稿稿_EN.md
+d200c7f827415604eee990727980c874c4cd8ecd5f4b3f1fc80278403e5bda26       13076  manuscript/Supplementary_Information.md
+ac676cc299d7feb87da2913ca3845f9b5e574550a85533ca4f938af499067d53       22698  results/NT5DC2_mirna_indirect_support.tsv
+9668e6cdef7b3aa0508bd8186d2105bfdfdd9fb8c9e21dfb3c44d77a3ebca0b7        8837  results/candidate_circRNA.tsv
+acbf9066a01ef2766d720b9b140cdd86b58089ace8e1086846b0f92bcee194b4     7592731  results/circRNA_gene_map.tsv
+f511a093dacb392465250da1e99a5ebddb170c1a9fe79be868b0c4878302d7a6        9364  results/circbank_id_map.tsv
+e6356d3c16b633495cbe581361c7f09a02220cbee4b60230fa15b7a908fd4a50     1107076  results/fallback_gene_mirna_support.tsv
+177041d33f8997dd4085dceca4055029f100b2659bf03c895f4bae9ea3f4bade        6550  results/fallback_genes_indirect_support.tsv
+d547ddef67eed3fa8ff71917bcb3256db16e6a648ed51592a2162266e5b07961        5517  results/gse14520_validation.tsv
+7c8b71e4213afaa467cc1ee351e3098ec511ad87a9cc63522e838101719a6973        9957  results/immune_correlation_2queues.tsv
+e6e2de6187bae17e1d4c9dc86d33e8391cf276ecbc2f2883a959f8978761e471     1782425  results/network_edges_qc.tsv
+afdd55275f04066ba449f8a17763a627bfec1dcd536cc1f7736ecfc73f05ea8c        6753  results/network_genes.tsv
+fe47bac36e00d4affc2320b7115cfa7b57ffd25cc6e42c64a06725f80fa7dcbf       12109  results/tcga_candidate_gene_stats.tsv
+50dcf1a271f2343687ac9582a24db1b57314746ef25b5bd889462b91116bbe3b      225904  results/trinet_nodes.tsv
+cf194eac99fd4b78ad80af46cfb8f1f54af487c5719ea905c5f92d9b4514abc5         179  results/trinet_summary.tsv
+f6d75dd23b34e090ad6138366c7516fa4a45e4564f6975199e90a0322ebc0b4a       10749  scripts/make_figs3.py
+8d010bc03b9eb323e0ccfd4d2a5948969b8d9e23a351f56cff89adda3d63615e        4654  scripts/make_submission_figures.py
+01de6062cff9030b239c9687da1d5f97ae7fd7ad1af15098f3b6dd0bb6954ef4        7484  scripts/step1_map_filter.py
+9503ac66a4fcf90fca1783621ed77ffd5e40d786bff0e5b5c700f72a9754f9e5       11873  scripts/step2_tcga_survival.py
+07a56f548d3869957434b35d891a5a6c84bce44a29f4bfe3961c9946a8a2002a       12592  scripts/step3_validate14520.py
+fe8c68a00e7ed1f8b613133dabf57fe664f2340e8189b35e00854a6f6c35a085       11520  scripts/step4_immune.py
+6cc8647354f726f9cb55aef481bac3be8f54802ce0dad8f95903c5555fc36451       10361  scripts/step4b_immune_tcga.py
+4e6278be0efb694ca6845243a37cda47c8248da0ae8d9a5b2d3293881dfcb424        8367  scripts/step6_network.py
+f0cdc2f884beaccdd9baa347cd523fa37cb51347e40e24dbb016705be5cd8e9c        8241  scripts/step7_miRNA_binding_v2.py
+c1ab0c0a310f91ce49cb29ceb916819eddc94ed20f1c2deb7ea9db8f76c6b65d        8737  scripts/step8_network_qc.py
+61a5235bd3cf3b7b833b39302d83e1b640d5945228f00fbd24ebf1959081eb3c        4950  scripts/step9_nt5dc2_support.py
+590ebf6cef2e4c5b266f541a3b1f9a96805d954481a9769c45bc82be6006bd25        7876  scripts/step9b_fallback_support.py
+
+Total: 45 files, 13.7 MB

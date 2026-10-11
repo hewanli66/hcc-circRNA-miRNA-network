@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1374" height="330" viewBox="0 0 1374 330">
+<rect width="1374" height="330" fill="#fff"/>
+<text x="24.0" y="30.0" font-size="17" text-anchor="start" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">Figure 4  Immune infiltration associations (cross-cohort)</text>
+<text x="24.0" y="50.0" font-size="11" text-anchor="start" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">Cell colour: red = positive, blue = negative; intensity = |r| in TCGA-LIHC</text>
+<text x="24.0" y="66.0" font-size="11" text-anchor="start" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">Only gene-cell pairs concordant in both cohorts with |r| &gt; 0.15 are shown</text>
+<rect x="300.0" y="252" width="184.8" height="12" fill="#3b7dd8"/>
+<text x="300.0" y="248.0" font-size="10" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">r = -0.5</text>
+<rect x="762.0" y="252" width="184.8" height="12" fill="#ffffff"/>
+<text x="762.0" y="248.0" font-size="10" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0</text>
+<rect x="1224.0" y="252" width="184.8" height="12" fill="#d94f4f"/>
+<text x="1224.0" y="248.0" font-size="10" text-anchor="middle" fill="#666" font-weight="normal" font-family="Helvetica,Arial,sans-serif">r = +0.5</text>
+<text x="322.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 322.0 82)" text-anchor="start">Activated_CD8</text>
+<text x="366.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 366.0 82)" text-anchor="start">B_cell</text>
+<text x="410.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 410.0 82)" text-anchor="start">CD4_T_cell</text>
+<text x="454.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 454.0 82)" text-anchor="start">CD8_T_cell</text>
+<text x="498.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 498.0 82)" text-anchor="start">Central_Memory</text>
+<text x="542.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 542.0 82)" text-anchor="start">Dendritic_cell</text>
+<text x="586.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 586.0 82)" text-anchor="start">Effector_CD4</text>
+<text x="630.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 630.0 82)" text-anchor="start">Endothelial</text>
+<text x="674.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 674.0 82)" text-anchor="start">Exhausted_CD8</text>
+<text x="718.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 718.0 82)" text-anchor="start">Mast_cell</text>
+<text x="762.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 762.0 82)" text-anchor="start">Memory_CD8</text>
+<text x="806.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 806.0 82)" text-anchor="start">Monocyte_to_Mac</text>
+<text x="850.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 850.0 82)" text-anchor="start">NKT_cell</text>
+<text x="894.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 894.0 82)" text-anchor="start">NK_cell</text>
+<text x="938.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 938.0 82)" text-anchor="start">Neutrophil</text>
+<text x="982.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 982.0 82)" text-anchor="start">Plasma_cell</text>
+<text x="1026.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 1026.0 82)" text-anchor="start">Tfh_cell</text>
+<text x="1070.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 1070.0 82)" text-anchor="start">Th1_cell</text>
+<text x="1114.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 1114.0 82)" text-anchor="start">Th2_cell</text>
+<text x="1158.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 1158.0 82)" text-anchor="start">Treg_cell</text>
+<text x="1202.0" y="82" font-size="11" fill="#222" font-family="Helvetica" transform="rotate(-60 1202.0 82)" text-anchor="start">gdT_cell</text>
+<text x="290.0" y="106.0" font-size="12" text-anchor="end" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">CD5</text>
+<rect x="300.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.86" stroke="#fff" stroke-width="1"/>
+<text x="321.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.84</text>
+<rect x="344.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.80" stroke="#fff" stroke-width="1"/>
+<text x="365.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.77</text>
+<rect x="388.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.90" stroke="#fff" stroke-width="1"/>
+<text x="409.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.88</text>
+<rect x="432.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.84" stroke="#fff" stroke-width="1"/>
+<text x="453.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.82</text>
+<rect x="476.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.84" stroke="#fff" stroke-width="1"/>
+<text x="497.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.81</text>
+<rect x="520.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.84" stroke="#fff" stroke-width="1"/>
+<text x="541.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.81</text>
+<rect x="564.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.88" stroke="#fff" stroke-width="1"/>
+<text x="585.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.86</text>
+<rect x="652.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.86" stroke="#fff" stroke-width="1"/>
+<text x="673.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.83</text>
+<rect x="696.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.43" stroke="#fff" stroke-width="1"/>
+<text x="717.5" y="106.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.33</text>
+<rect x="740.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.87" stroke="#fff" stroke-width="1"/>
+<text x="761.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.85</text>
+<rect x="828.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.80" stroke="#fff" stroke-width="1"/>
+<text x="849.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.77</text>
+<rect x="872.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.72" stroke="#fff" stroke-width="1"/>
+<text x="893.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.67</text>
+<rect x="916.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.63" stroke="#fff" stroke-width="1"/>
+<text x="937.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.57</text>
+<rect x="960.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.78" stroke="#fff" stroke-width="1"/>
+<text x="981.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.74</text>
+<rect x="1004.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.89" stroke="#fff" stroke-width="1"/>
+<text x="1025.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.87</text>
+<rect x="1048.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.89" stroke="#fff" stroke-width="1"/>
+<text x="1069.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.87</text>
+<rect x="1092.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.74" stroke="#fff" stroke-width="1"/>
+<text x="1113.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.69</text>
+<rect x="1136.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.84" stroke="#fff" stroke-width="1"/>
+<text x="1157.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.81</text>
+<rect x="1180.0" y="90.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.85" stroke="#fff" stroke-width="1"/>
+<text x="1201.5" y="106.0" font-size="10" text-anchor="middle" fill="#fff" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.83</text>
+<text x="290.0" y="130.0" font-size="12" text-anchor="end" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">HSD17B6</text>
+<rect x="608.0" y="114.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.29" stroke="#fff" stroke-width="1"/>
+<text x="629.5" y="130.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.16</text>
+<rect x="740.0" y="114.0" width="43" height="23" fill="#3b7dd8" fill-opacity="0.36" stroke="#fff" stroke-width="1"/>
+<text x="761.5" y="130.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">-0.24</text>
+<text x="290.0" y="154.0" font-size="12" text-anchor="end" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">LRCH1</text>
+<rect x="1004.0" y="138.0" width="43" height="23" fill="#d94f4f" fill-opacity="0.37" stroke="#fff" stroke-width="1"/>
+<text x="1025.5" y="154.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">0.26</text>
+<text x="290.0" y="178.0" font-size="12" text-anchor="end" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">SMG5</text>
+<rect x="608.0" y="162.0" width="43" height="23" fill="#3b7dd8" fill-opacity="0.32" stroke="#fff" stroke-width="1"/>
+<text x="629.5" y="178.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">-0.20</text>
+<text x="290.0" y="202.0" font-size="12" text-anchor="end" fill="#222" font-weight="bold" font-family="Helvetica,Arial,sans-serif">SREBF2</text>
+<rect x="784.0" y="186.0" width="43" height="23" fill="#3b7dd8" fill-opacity="0.28" stroke="#fff" stroke-width="1"/>
+<text x="805.5" y="202.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">-0.15</text>
+<rect x="872.0" y="186.0" width="43" height="23" fill="#3b7dd8" fill-opacity="0.34" stroke="#fff" stroke-width="1"/>
+<text x="893.5" y="202.0" font-size="10" text-anchor="middle" fill="#333" font-weight="normal" font-family="Helvetica,Arial,sans-serif">-0.23</text>
+</svg>
