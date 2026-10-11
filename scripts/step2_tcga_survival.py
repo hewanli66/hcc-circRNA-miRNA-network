@@ -165,16 +165,22 @@ for gid, v in expr.items():
 print(f'      命中候选基因 {len(sy_expr)} / {len(need)}')
 
 # ---------- 样本分组（barcode 末段为 01A / 11A 格式）----------
+# 🔴 barcode 第三、四位编码样本类型：01 原发肿瘤、02 复发、11 正常组织。
+#原判定 `seg[0] == '0'` 会把 02 复发样本一并算成肿瘤，使本步的单因素
+#  Cox / log-rank 分析比校正模型多纳入 3 例复发样本，也与多因素模型口径不一致。
+# 现改为精确判定 01；复发样本与多因素模型（step14_export_for_R.py）一并排除。
 def stype(b):
     seg = b.split('-')[-1]
     if not seg: return 'other'
-    if seg[0] == '0': return 'tumor'
+    if seg[0] == '0' and seg[1:2] == '1': return 'tumor'      # 01 = Primary Tumor
+    if seg[0] == '0': return 'recurrent'                     # 02 / 03 / 04
     if seg[0] == '1' and len(seg) > 1 and seg[1].isdigit(): return 'normal'
     return 'other'
 
 tum = [i for i, s in enumerate(samples) if stype(s) == 'tumor']
 nor = [i for i, s in enumerate(samples) if stype(s) == 'normal']
-print(f'      肿瘤 {len(tum)}，癌旁 {len(nor)}')
+rec = [i for i, s in enumerate(samples) if stype(s) == 'recurrent']
+print(f'      原发肿瘤 {len(tum)}，癌旁 {len(nor)}，复发（已排除）{len(rec)}')
 
 # ---------- 临床 ----------
 C = [l.rstrip('\n').split('\t') for l in gzip.open(CLIN, 'rt', encoding='utf-8', errors='ignore').read().splitlines()]

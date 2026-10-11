@@ -158,16 +158,29 @@ while i < len(lines):
             i += 1
         # 数据来源表等"正文内小表"就地保留；带编号的主表与补充表移文末
         cap = pending_table_caption or ''
-        keep_inline = ('Dataset' in block[0])          # Methods 里的数据来源表
-        if keep_inline:
-            add_table_md('\n'.join(block))
+        # 已编号的表（含 Methods 的Table 3 数据来源表）一律移至文末并参与排序；
+        # 只有没有表题的正文内小表才就地保留。
+        if re.match(r'^(Supplementary\s+)?Table\s', cap):
+            tables.append((cap, '\n'.join(block)))
         else:
-            tables.append((pending_table_caption, '\n'.join(block)))
+            add_table_md('\n'.join(block))
         pending_table_caption = None
         continue
 
     # 分隔线
     if re.fullmatch(r'-{3,}', line.strip()):
+        i += 1
+        continue
+
+    # 表题：`**Table 1 | xxx**` / `**Supplementary Table S1 | xxx**` 形式的纯段落。
+    # 这类表题不走下面的 `#` 标题分支，必须单独识别，否则 cap 为空、
+    # 文末排序失效，表格会按正文出现顺序输出成「2、3、1」。
+    cap_m = re.match(r'^\*\*((?:Supplementary\s+)?Table\s+\S+\s*\|.*?)\*\*\s*$',
+                     line.strip())
+    if cap_m:
+        pending_table_caption = cap_m.group(1).strip()
+        add_para(pending_table_caption, bold=True, size=12,
+                 space_before=10, space_after=4)
         i += 1
         continue
 
@@ -226,7 +239,22 @@ if tables:
     doc.add_page_break()
     add_para('Tables', bold=True, size=14, space_after=4)
     add_para('', size=6, space_after=6)
-    for cap, blk in tables:
+
+    # 文末表格按编号排序：主表 Table 1..N 在前，Supplementary Table S1..Sn 在后，
+    # 各自按编号升序。正文中的出现顺序不保证与编号一致（例如 Table 1 的结果表
+    # 在 2.2 节之后才出现，而 Table 2 的分层表在 2.4 节），直接按收集顺序输出
+    # 会得到「2、3、1」的倒序，生产部门会因此退回。
+    def table_sort_key(item):
+        cap = item[0] or ''
+        m = re.match(r'^Supplementary\s+Table\s+S(\d+)', cap)
+        if m:
+            return (1, int(m.group(1)))
+        m = re.match(r'^Table\s+(\d+)', cap)
+        if m:
+            return (0, int(m.group(1)))
+        return (2, 0)      # 无编号表格排在最后，保持相对顺序
+
+    for cap, blk in sorted(tables, key=table_sort_key):
         if cap:
             # 表题已在正文出现；此处再出一次以满足「表题紧接表格之前」
             add_para(cap, bold=True, size=11, space_before=10, space_after=3)
