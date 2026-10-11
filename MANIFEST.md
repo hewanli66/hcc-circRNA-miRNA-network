@@ -1,9 +1,9 @@
 # MANIFEST — SHA256 and size of every archived file
 
 193ac70edff0e68bc798fc9504b05275564c16d1dc84af403fa95a83fa47172c          91  .gitignore
-73877f4e99b2636452a675cb71ac7aaa99dd1a0c774cfdc97736a1d192c2cc84         556  CITATION.cff
+1a83cbceabf9c430bf660d54179d485759f46022537d427bbad688cfba29ccfa         556  CITATION.cff
 5ef41f765039431797af83f58617eb433f79eb5d0682966261b8788d524b4770         862  LICENSE
-3d0c5cf4648b77f499666cf41d8e84b613918e387c40454dcda9d3454a04b1f1        5417  README.md
+bdba186b363f23797d5ac5d4657ff477034fdbdd79c7874fd26454518cff4af2        5559  README.md
 bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
 eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
 f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
@@ -18,10 +18,10 @@ bdb48a5ad758734c908cebb106de940aa2a4135901291b4aada1accac589a591      933051  fi
 074fd4947cad88bc0c2c7a92e7668f7057d177acd947f9d1e9279cfbe2c928ea       62309  figures/Fig6_trinetwork.svg
 bc1b404efc26783e49d818476cfc3df7fdbcd9c874c72ed1e15b5def0cd32345      187540  figures/Fig7_qc_tiers.png
 3fe5c3de60db241e36b7b9e80bc37b297dc109ec038e9092acc4fbb0ff2bf12c        5024  figures/Fig7_qc_tiers.svg
-6a233888d2d440cf5ed3b9cdbf31bdf71afda26f0ac6760aecc6b1e9beeab084        7010  manuscript/CoverLetter_SR.md
-f468b8578f5550ddbf544a60091d3f4c1802dc3d68db03d9cdcfefa7b231f8d7       63339  manuscript/SR_manuscript_EN.docx
-47bf05a40de1d1bb897fdb32d9d3ed88a506e8a957b573a1ffacf706d714d864       57990  manuscript/SR_manuscript_EN.md
-69d6b1175a0b4b2a4e35ab551ed76c3bf2ebb80cd7fafb2f60126af7d7d0950a       13502  manuscript/Supplementary_Information.md
+10204d596c89f6c20bd783f11dfbab7f76b6b56a45769f806138526c58b99ad3        7010  manuscript/CoverLetter_SR.md
+82a07be6c9cb5c174d7ba2b307a0837153bb93910ca7e236249cd7107708524f       63369  manuscript/SR_manuscript_EN.docx
+bea188b43f285ef367458ba1c9b3040e6474b59f5d3bb49dcf3cdfb109b45a24       58068  manuscript/SR_manuscript_EN.md
+b1ca894f810173d61de367244462b408825e56ef96a05769c25046a644797ec6       13573  manuscript/Supplementary_Information.md
 ac676cc299d7feb87da2913ca3845f9b5e574550a85533ca4f938af499067d53       22698  results/NT5DC2_mirna_indirect_support.tsv
 749d29be3434afb321f3db6fd476ccce8613e28c43c3a5c5bc529233101d2eed      107780  results/backfill_miRNA.tsv
 9668e6cdef7b3aa0508bd8186d2105bfdfdd9fb8c9e21dfb3c44d77a3ebca0b7        8837  results/candidate_circRNA.tsv

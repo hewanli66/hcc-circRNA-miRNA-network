@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite the associated manuscript."
 title: "circRNA-miRNA-mRNA network in hepatocellular carcinoma: reproducible analysis archive"
-version: 1.1.0
+version: 1.1.1
 date-released: 2026-10-11
 type: dataset
 authors:
@@ -10,7 +10,7 @@ authors:
     orcid: "https://orcid.org/0009-0002-0829-1909"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23293108"
+    value: "10.5281/zenodo.23293107"
 keywords:
   - hepatocellular carcinoma
   - circRNA

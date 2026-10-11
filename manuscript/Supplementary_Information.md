@@ -180,7 +180,7 @@ We were unable to cross-match the circRNA identifiers used in the two prior stud
 
 ## Supplementary Table S3 | Files deposited in the associated repository
 
-All files are deposited at **https://doi.org/10.5281/zenodo.23293108** (version v1.0.0), as cited in the Data availability statement of the main manuscript. No public data are redistributed; those are obtained from their original repositories using the accessions given in Methods 4.1.
+All files are deposited at **https://doi.org/10.5281/zenodo.23293107** (concept DOI, resolving to the most recent version; this package corresponds to v1.1.1), as cited in the Data availability statement of the main manuscript. No public data are redistributed; those are obtained from their original repositories using the accessions given in Methods 4.1.
 
 **Results**
 

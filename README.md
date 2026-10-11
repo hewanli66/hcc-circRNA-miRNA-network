@@ -4,7 +4,7 @@
 and HSD17B6 as prognostic markers in hepatocellular carcinoma
 **Author**: Wanli He (School of Medicine, Shangqiu Institute of Technology)
 **ORCID**: 0009-0002-0829-1909
-**Version**: 1.1.0 · 2026-10-11
+**Version**: 1.1.1 · 2026-10-11
 
 ## What this archive contains
 
@@ -99,5 +99,8 @@ to rasterise SVG.
 
 ## Citation
 
-If this archive is used, please cite the manuscript above. The v1.0.0 archive is
-deposited at 10.5281/zenodo.23293108.
+If this archive is used, please cite the manuscript above.
+
+The archive is deposited on Zenodo under concept DOI 10.5281/zenodo.23293107, which always
+resolves to the most recent version. The version corresponding to this package is
+10.5281/zenodo.23296128.
