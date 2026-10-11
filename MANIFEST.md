@@ -1,9 +1,9 @@
 # MANIFEST — SHA256 and size of every archived file
 
 193ac70edff0e68bc798fc9504b05275564c16d1dc84af403fa95a83fa47172c          91  .gitignore
-d458be267d44846d164142b41dc7f0b035cee484757dad678253ab65b74919ce         556  CITATION.cff
+19714c65bc742657b741059325dc882558b0d1b9c9e96569c49b0a9a9c10b3ca         556  CITATION.cff
 5ef41f765039431797af83f58617eb433f79eb5d0682966261b8788d524b4770         862  LICENSE
-861a6a6c13cf56c578a4109fe6876391c7b5d7dfdda523ae3349e7b0b1091ca7        5559  README.md
+9a6194af4adaeb0bc7362b2455db3a653e1b6f1a2ddc77120d2cb7257c74054a        5559  README.md
 bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
 eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
 f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
@@ -18,11 +18,12 @@ bdb48a5ad758734c908cebb106de940aa2a4135901291b4aada1accac589a591      933051  fi
 074fd4947cad88bc0c2c7a92e7668f7057d177acd947f9d1e9279cfbe2c928ea       62309  figures/Fig6_trinetwork.svg
 bc1b404efc26783e49d818476cfc3df7fdbcd9c874c72ed1e15b5def0cd32345      187540  figures/Fig7_qc_tiers.png
 3fe5c3de60db241e36b7b9e80bc37b297dc109ec038e9092acc4fbb0ff2bf12c        5024  figures/Fig7_qc_tiers.svg
-a5744a7cb59833038232f26865acfd503f0a35ec0a6c874dfcab83e2f81a3d5b        7102  manuscript/CoverLetter_SR.md
+d9237bc69f38c834af62365610b0efedda6ee18e7979c9e6de3bc4d1b68e3c5f        7159  manuscript/CoverLetter_SR.md
 c761ae8712839f1a55f3dc643d052262a708ffb073254a86462c3f26397a9cb9       14427  manuscript/Response_to_Second_Round_Reviewer.md
-12cb83faa8ba91ce3f3242b125c606612028ac6837fcd212142046f7707f2542       66085  manuscript/SR_manuscript_EN.docx
-aa49170b111aeb1aa9a4ef1bcf314dbb8587df6cc57ff009b46cc9f2b9b4bced       65667  manuscript/SR_manuscript_EN.md
-cee5663500ed39e4533e13a5c582f62e41dcbca8fd9d9a7bccf8ac6584bc3530       44758  manuscript/Supplementary_Information.docx
+ede01010117a366384b7fc7f5b3df76cc506be7d2788c438f7d47abdf9a12a53       10693  manuscript/Response_to_Third_Round_Reviewer.md
+6ff2c2cbc6aecf34e4aa1cff1e48036c05e06d31bd21ba0f635643d7b45fdf04       66160  manuscript/SR_manuscript_EN.docx
+d0171ecbfb481b7dcf1784fd8abf42c454c5750a5047a01db6a1a3a2113e8ba6       66529  manuscript/SR_manuscript_EN.md
+00d5301c89abb6370ed49c9097d6c1ea8ac5a86aeefa2b65d3e09e0e2068438b       44758  manuscript/Supplementary_Information.docx
 9715be62c736fef9120e11186ed5e710a7dddbdbe47f29189a663ab196f760ca       13605  manuscript/Supplementary_Information.md
 ac676cc299d7feb87da2913ca3845f9b5e574550a85533ca4f938af499067d53       22698  results/NT5DC2_mirna_indirect_support.tsv
 749d29be3434afb321f3db6fd476ccce8613e28c43c3a5c5bc529233101d2eed      107780  results/backfill_miRNA.tsv
@@ -49,8 +50,8 @@ e4144b07d11fd101db96c184a249bf7044e0a8c58f5ba6c10218d405c59dab50      183188  re
 7823678040d08a84b95c29d7f26c196307a721da370f278285254c529096288d      377883  results/immune_scores_TCGA.tsv
 ddbd1b99e1fa5203adf21a57d2aca95471dbccc2f9a82b357003b39d5723a91c         628  results/major1_two_level_evidence.tsv
 67acb534dd3dd736df23ac762a1ed1e22d2831672d5e3626cf5f64ccb99efa14         191  results/major5_circbank_vs_encori.tsv
-50a81695616fbef8ccff9de5b3a1a11f01eb3df6b066b40a6c4e36e783a02065        7376  results/multivariable_cox.tsv
-5a4dc07517495644d0615fbdf98bcb77cb186bfa6211f7d121b35c3d54066bd8        1757  results/multivariable_cox_uni.tsv
+f287c7abd8d416652040402e7b9cf716659ef8d66145d54a4134a0edfdc857d7        7393  results/multivariable_cox.tsv
+ba23426e48028be65fc7d915b5338d9c1018e3772640796ac907c284f8d4fe1a        1767  results/multivariable_cox_uni.tsv
 59b9a6252ef4c260873bb4dbb1ee46bde573c78a88c71ba55143d0ae7b969df5        7253  results/network_edges.tsv
 e93a14ce0cf53a6b3d3e6e029bb759a33aa285f0fc3222bf716d299a4808e95c     1894454  results/network_edges_qc.tsv
 afdd55275f04066ba449f8a17763a627bfec1dcd536cc1f7736ecfc73f05ea8c        6753  results/network_genes.tsv
@@ -74,7 +75,7 @@ defd4b306119a6dcde444c7ffd6ea8e568e68dc239bf29b2952ee86462333754       11270  sc
 e71ee17715dcbb93095415fb606d29f74233dff067c25b028069f75b8b76306a        7555  scripts/query_circbank_candidates.py
 eb5f15d089a966b5821ef9fd3fb441a52412f0c321bceb14fa604d81bec991b3        5014  scripts/step11_backfill_binding.py
 9368dc1f76b34806cdf1eef9c79bd1024d6bfed46d5f07004404c79fe1477ec4        6593  scripts/step12_immune_rebuild.py
-c8952426da8a35268f4493c1afa5994a82999a87dcce573e41f839fb8a1a98f8       12932  scripts/step14_export_for_R.py
+1668c7b70006d19545806b9b743fb53f3d9d1ac8fd1fd9da57cf34837d24911e       13829  scripts/step14_export_for_R.py
 89ef7b609173925ff47ec09e55108a4e36ef6f216d7a48eee70b1950e02660a7        8008  scripts/step15_multivar_cox.R
 1df8e6b5d9160f60600860920c003ed16a9964f876fcf4c5a2138cd818516de4        3242  scripts/step16_cox_benchmark.R
 bc6e766476a9baf3bcf4a5b5897f925b937cde5af60d397ef612cb394c281976        9222  scripts/step17_fdr_report.R
@@ -93,4 +94,4 @@ c1ab0c0a310f91ce49cb29ceb916819eddc94ed20f1c2deb7ea9db8f76c6b65d        8737  sc
 61a5235bd3cf3b7b833b39302d83e1b640d5945228f00fbd24ebf1959081eb3c        4950  scripts/step9_nt5dc2_support.py
 590ebf6cef2e4c5b266f541a3b1f9a96805d954481a9769c45bc82be6006bd25        7876  scripts/step9b_fallback_support.py
 
-Total: 92 files, 17.6 MB
+Total: 93 files, 17.6 MB

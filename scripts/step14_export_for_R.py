@@ -73,6 +73,16 @@ def export_tcga():
         surv = {r['sample']: (float(r['OS.time']), int(r['OS']))
                 for r in csv.DictReader(f, delimiter='\t')}
 
+    # 🔴 只保留原发肿瘤（sample_type_id = 01）。
+    #    GDC 的 TCGA-LIHC 临床表含 377 Primary Tumor、59 Solid Tissue Normal、
+    #    3 Recurrent Tumor；表达矩阵 424 列里也有 53 个非肿瘤样本。
+    #    原代码未按 sample_type 过滤，直接遍历 surv 全部样本，
+    #    导致 49 个正常组织和 3 个复发样本被当作肿瘤纳入多因素 Cox 模型
+    #    （386 例中仅 347 例是真正的原发肿瘤）。审稿人第三轮 RC4 指出
+    #    「样本漏斗混淆肿瘤与非肿瘤」，追查后确认这已影响校正模型本身。
+    #    复发样本（02）同样排除：其预后与初诊队列不可直接合并。
+    PRIMARY_TUMOUR = '01'
+
     def stage_of(s):
         v = (clin[s].get('ajcc_pathologic_stage.diagnoses') or '').strip().upper()
         if v in ('STAGE I', 'STAGE IA', 'STAGE IB'):
@@ -89,6 +99,8 @@ def export_tcga():
         for s, (t, e) in sorted(surv.items()):
             if s not in clin:
                 continue
+            if (clin[s].get('sample_type_id.samples') or '').strip() != PRIMARY_TUMOUR:
+                continue          # 只保留原发肿瘤，见上方说明
             st = stage_of(s)
             if st is None:
                 continue

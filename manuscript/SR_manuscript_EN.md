@@ -10,7 +10,7 @@
 
 ## Abstract
 
-Hepatocellular carcinoma (HCC) shows substantial prognostic heterogeneity. We screened GSE122482 (10 pairs of HBV-related tumour and peritumour tissues), identified 103 differentially expressed circRNAs, and evaluated the prognostic value of their **host-gene mRNAs** in TCGA-LIHC (374 tumours) and GSE14520 (225 tumours). The circRNA–miRNA network comprised 15,479 deduplicated edges, 2,378 miRNAs, 79 circRNAs and 73 host genes. Of the host genes, 37 were significant in TCGA and 34 of the 45 evaluable in both cohorts showed concordant direction (76%); six of these met the combined validation criterion. In multivariable Cox models adjusting for AJCC stage, age and sex, **NT5DC2 remained significant in both cohorts** (adjusted HR 1.22, P = 0.019; 1.27, P = 0.018); HSD17B6 reached significance in GSE14520 (0.80, P = 0.033) but not TCGA (P = 0.061); the remaining four were not significant after adjustment. Because neither cohort contains circRNA data and GSE122482 provides no matched mRNA quantification, **the markers identified are host-gene mRNA markers; circRNA-level prognostic value remains untested**. Benjamini–Hochberg correction across all 92,204 tested features yielded 3 features at FDR < 0.05, of which 2 belonged to the 103 candidates, against 5,649 features at uncorrected P < 0.05. Comparison with ENCORI/starBase showed minimal overlap between prediction sources (Jaccard 0.000–0.035), indicating that connectivity-based support reflects internal consistency of one prediction resource rather than independent validation.
+Hepatocellular carcinoma shows substantial prognostic heterogeneity. We screened GSE122482 (10 paired HBV-related tumour and peritumour tissues), identified 103 differentially expressed circRNAs, and evaluated the prognostic value of their **host-gene mRNAs** in TCGA-LIHC (377 primary tumours) and GSE14520 (247 tumours). The circRNA–miRNA network comprised 15,479 deduplicated edges, 2,378 miRNAs, 79 circRNAs and 73 genes. Of the host genes, 37 were significant in TCGA and 34 of the 45 evaluable in both cohorts showed concordant direction (76%); six met the validation criterion. In multivariable Cox models adjusting for AJCC stage, age and sex, **NT5DC2 remained significant in both cohorts** (adjusted HR 1.39, P = 0.0004; 1.27, P = 0.018); HSD17B6 reached significance in GSE14520 (0.80, P = 0.033) but not TCGA (P = 0.052); the remaining four were not significant. Because neither cohort contains circRNA data and GSE122482 provides no matched mRNA quantification, **the markers identified are host-gene mRNA markers; circRNA-level prognostic value remains untested**. Benjamini–Hochberg correction across 92,204 features yielded 2 of 103 candidates at FDR < 0.05, against 5,649 of 92,204 at uncorrected P < 0.05. Comparison with ENCORI/starBase showed minimal overlap between prediction sources (Jaccard 0.000–0.035), indicating that connectivity-based support reflects internal consistency of one resource rather than independent validation.
 
 **Keywords**: hepatocellular carcinoma; circRNA; host gene; prognostic marker; immune infiltration; network analysis
 
@@ -26,7 +26,7 @@ Two limitations characterise much of the existing literature. First, most studie
 
 A third issue is routinely overlooked: coordinate systems differ between data sources. circRNA identifiers commonly follow the `chrN:start-end` convention, whereas databases such as circBank use `N:start-end`; if these are not harmonised, coordinate matching fails catastrophically.
 
-We therefore adopted a three-step strategy of screening, validation and stratification. First, we identified differentially expressed circRNAs in paired tumour and peritumour tissues. Second, we cross-validated the prognostic value of their host genes in two independent cohorts. Third, we integrated circBank miRNA binding predictions together with binding free energies, stratified each edge by matching confidence and binding strength, and proposed an indirect-support strategy to validate genes for which coordinate matching fails.
+We therefore adopted a three-step strategy of screening, validation and stratification. First, we identified differentially expressed circRNAs in paired tumour and peritumour tissues. Second, we cross-validated the prognostic value of their host genes in two independent cohorts. Third, we integrated circBank miRNA binding predictions together with binding free energies, stratified each edge by matching confidence and binding strength, and proposed an internal-consistency grade for genes for which coordinate matching fails.
 
 ---
 
@@ -48,22 +48,13 @@ In TCGA-LIHC, the expression of 37 host genes was significantly associated with 
 
 Independent evaluation in GSE14520 was possible for 45 of the 87 host genes analysed in TCGA-LIHC. The 42 genes not evaluable in GSE14520 carry no probe on the GPL3921 array used for that cohort and are therefore absent from the comparison rather than missing at random; they are listed in the archived per-gene statistics. Among the 45 evaluable genes, concordant direction was seen for 34 (76%). Applying the criterion of concordant direction together with Cox regression P < 0.05 in GSE14520, six genes passed validation (Table 1).
 
-**Validation strength was heterogeneous.** NT5DC2 and HSD17B6 were significant by Cox regression in both cohorts and represent the strongest evidence in this study. BCLAF1, SREBF2, LRCH1 and CD5 did not reach significance by Cox regression in TCGA (P = 0.086, 0.201, 0.092 and 0.063 respectively); these were included on the basis of significant Cox regression in the validation cohort with concordant direction, and CD5 was additionally significant by the log-rank test in TCGA (P = 0.0019, against a Cox P of 0.063). Figure 3 shows the scatter distribution of hazard ratios in the two cohorts, with 34 paired genes lying close to the diagonal.
+**Validation strength was heterogeneous.** NT5DC2 and HSD17B6 were significant by Cox regression in both cohorts and represent the strongest evidence in this study. BCLAF1, SREBF2, LRCH1 and CD5 did not reach significance by Cox regression in TCGA (P = 0.086, 0.201, 0.092 and 0.063 respectively); these were included on the basis of significant Cox regression in the validation cohort with concordant direction, and CD5 was additionally significant by the log-rank test in TCGA (P = 0.0019, against a Cox P of 0.063). Figure 3 shows the scatter distribution of hazard ratios in the two cohorts; of the 45 genes evaluable in both, 34 fall on the same side of HR = 1 in each cohort.
 
-**Effect direction.** Higher expression of HSD17B6, CD5 and LRCH1 was associated with better overall survival in both cohorts (adjusted HR < 1 in each), whereas higher NT5DC2 and BCLAF1 expression was associated with poorer outcome (adjusted HR > 1 in each). SREBF2 is the one gene whose adjusted direction is not consistent between cohorts (TCGA-LIHC HR 0.98, GSE14520 HR 1.25); it was concordant in the unadjusted analysis but reverses after adjustment, and is therefore treated as directionally uncertain (Fig. 5, Table 1).
+**Effect direction.** Higher expression of HSD17B6, CD5 and LRCH1 was associated with better overall survival in both cohorts (adjusted HR < 1 in each), whereas higher NT5DC2, BCLAF1 and SREBF2 expression was associated with poorer outcome (adjusted HR > 1 in each; SREBF2 HR 1.09 in TCGA-LIHC and 1.25 in GSE14520, the latter sitting exactly at the significance boundary). Direction is therefore consistent across cohorts for all six genes after adjustment (Fig. 5, Table 1).
 
-**Multivariable analysis identifies only NT5DC2 as an independently prognostic marker.** Because prognostic significance in TCGA alone could reflect confounding by clinical covariates, we fitted Cox models adjusting for AJCC stage (I/II vs III/IV), age (centred at 50 years) and sex, implemented in R with `survival::coxph` (Efron handling of ties). Both cohorts contain both sexes — 189 male and 30 female among the 219 GSE14520 cases analysed, and 258 male and 128 female among the 386 TCGA-LIHC cases analysed — so sex entered every model as a covariate. In TCGA-LIHC (n = 386, 145 events) and GSE14520 (n = 219, 84 events) the adjusted results were:
+**Multivariable analysis identifies only NT5DC2 as an independently prognostic marker.** Because prognostic significance in TCGA alone could reflect confounding by clinical covariates, we fitted Cox models adjusting for AJCC stage (I/II vs III/IV), age (centred at 50 years) and sex, implemented in R with `survival::coxph` (Efron handling of ties). Both cohorts contain both sexes — 189 male and 30 female among the 219 GSE14520 cases analysed, and 232 male and 109 female among the 341 TCGA-LIHC cases analysed — so sex entered every model as a covariate. Only primary tumours were included in TCGA-LIHC (see Section 4.1); in TCGA-LIHC (n = 341, 117 events) and GSE14520 (n = 219, 84 events) the adjusted results were as follows (the same values appear in the adjusted columns of Table 1):
 
-| Gene | TCGA adjusted HR (95% CI), P | GSE14520 adjusted HR (95% CI), P | Independent in both cohorts |
-|---|---|---|---|
-| **NT5DC2** | **1.22 (1.03–1.44), P = 0.019** | **1.27 (1.04–1.54), P = 0.018** | **Yes** |
-| HSD17B6 | 0.87 (0.75–1.01), P = 0.061 | 0.80 (0.65–0.98), P = 0.033 | No (TCGA borderline) |
-| BCLAF1 | 1.06 (0.89–1.26), P = 0.504 | 1.20 (0.96–1.51), P = 0.114 | No |
-| SREBF2 | 0.98 (0.83–1.15), P = 0.782 | 1.25 (1.00–1.55), P = 0.050 | No (CI lower bound 1.00; not significant) |
-| CD5 | 0.94 (0.79–1.11), P = 0.456 | 0.81 (0.65–1.02), P = 0.069 | No |
-| LRCH1 | 0.91 (0.77–1.07), P = 0.258 | 0.85 (0.66–1.08), P = 0.179 | No |
-
-Stage was a strong prognostic factor in both cohorts (adjusted HR 1.72, P = 0.0019 in TCGA; 3.14, P = 1.2 × 10⁻⁶ in GSE14520), confirming that adjustment was informative; sex was not a significant covariate in either cohort (TCGA P = 0.970; GSE14520 P = 0.430), so the prognostic signals below are not attributable to sex. **NT5DC2 is the only gene remaining significant in both cohorts after adjustment**, and its effect size changed little (unadjusted 1.25 to adjusted 1.22 in TCGA; 1.37 to adjusted 1.27 in GSE14520). SREBF2 in GSE14520 lies exactly at the significance boundary (P = 0.050, 95% CI 1.00–1.55) and is therefore reported as not significant. BCLAF1, SREBF2, CD5 and LRCH1 lost significance after adjustment and should be described as directionally consistent only (see Section 3.4).
+Stage was a strong prognostic factor in both cohorts (adjusted HR 1.74, P = 0.0053 in TCGA; 3.14, P = 1.2 × 10⁻⁶ in GSE14520), confirming that adjustment was informative; sex was not a significant covariate in either cohort (TCGA P = 0.838; GSE14520 P = 0.430), so the prognostic signals below are not attributable to sex. **NT5DC2 is the only gene remaining significant in both cohorts after adjustment**, and its effect size is if anything strengthened relative to the unadjusted estimate (1.25 to adjusted 1.39 in TCGA; 1.37 to adjusted 1.27 in GSE14520). HSD17B6 in TCGA and SREBF2 in GSE14520 lie close to the significance boundary (P = 0.052 and P = 0.050 respectively) and are reported as not significant. BCLAF1, SREBF2, CD5 and LRCH1 lost significance after adjustment and should be described as directionally consistent only (see Section 3.4).
 
 ### 2.3 Immune infiltration associations
 
@@ -78,7 +69,9 @@ The dual character of CD5 is noteworthy: it was significant by Cox regression in
 
 ### 2.4 The circRNA–miRNA–mRNA network
 
-Integration with circBank predictions yielded 15,479 circRNA–miRNA edges involving 2,378 miRNAs, 79 circRNAs and 73 host genes. The quality stratification is summarised in Fig. 7:
+Integration with circBank predictions yielded 15,479 circRNA–miRNA edges involving 2,378 miRNAs, 79 circRNAs and 73 host genes. The quality stratification is summarised in Table 2 and Fig. 7:
+
+**Table 2 | Quality stratification of the circRNA–miRNA network**
 
 | Tier | Edges | miRNAs | circRNAs | Genes |
 |---|---|---|---|---|
@@ -93,15 +86,6 @@ Ranked over the complete network (all quality tiers) by the number of connected 
 For 26 genes, circRNA entries had to be matched by same-gene, same-chromosome fallback, leaving the coordinate association uncertain. We applied an **internal consistency** heuristic: if a given miRNA also connects multiple exactly matched genes, its binding prediction is endorsed consistently across independent loci within the same prediction resource. Grading: ≥ 5 exact genes is strong, 2–4 moderate, 1 weak, 0 none. For **NT5DC2**—the only fallback-matched gene that also passed cross-cohort validation—28 of its 357 unique miRNAs reached the strong tier and 151 the moderate tier, giving 50.1% with strong or moderate internal support (counts are per unique miRNA).
 
 **This heuristic does not constitute independent validation, and we tested that directly.** All edges in our network originate from a single prediction resource (circBank), whose human entries carry no quality annotations (the `highConfidence`, `validated` and `conserved` fields are empty for every matched human record we retrieved). If circBank's seed matching is permissive, a miRNA that is broadly permissive will connect many genes by construction, and connectivity would then reflect the predictor rather than biology. We compared our predictions with ENCORI/starBase, which integrates seven independent algorithms (PITA, RNA22, miRmap, microT, miRanda, PicTar, TargetScan) together with CLIP-seq and degradome-seq evidence (accessed 11 October 2026):
-
-| Gene | circBank miRNAs | ENCORI miRNAs | Shared | Jaccard |
-|---|---|---|---|---|
-| NT5DC2 | 357 | 17 | 3 | 0.008 |
-| BCLAF1 | 16 | 142 | 3 | 0.019 |
-| SREBF2 | 194 | 129 | 11 | 0.035 |
-| LRCH1 | 46 | 48 | 0 | 0.000 |
-| HSD17B6 | 297 | 0 | 0 | – |
-| CD5 | 373 | 0 | 0 | – |
 
 The overlap is minimal (Jaccard 0.000–0.035), and circBank assigns substantially more miRNAs per gene than ENCORI; for HSD17B6 and CD5 the independent resource returns no prediction at all. **The two resources therefore disagree not only in degree but largely in substance about which miRNA targets which gene**, and the great majority of the 15,479 edges in our network are not corroborated by an independent predictor.
 
@@ -127,7 +111,7 @@ This study makes three principal contributions, each with a correspondingly boun
 
 **First, panoramic screening with cross-cohort survival validation identifies host genes of prognostic interest.** Systematic screening of 103 circRNAs identified six host genes with cross-cohort prognostic relevance, and multivariable adjustment reduced these to a single robust candidate. A conventional "one axis at a time" strategy would have been likely to miss these, particularly NT5DC2 and HSD17B6, which have received little attention at the circRNA level in the existing literature.
 
-**Second, cross-cohort validation and multivariable adjustment markedly improve reliability, and the residual evidence is graded rather than uniform.** Of 37 prognostic genes in TCGA, 34 showed concordant direction in GSE14520 (76%), and six met the combined criterion of concordant direction plus significant Cox regression in the validation cohort. After adjustment for AJCC stage, age and sex, **NT5DC2 remained significant in both cohorts** with an essentially unchanged effect size, making it the only independently prognostic host gene in this study. HSD17B6 retained significance in GSE14520 but became borderline in TCGA (P = 0.061); BCLAF1, SREBF2, CD5 and LRCH1 lost significance altogether. We accordingly distinguish a single robust candidate (NT5DC2), one partially supported candidate (HSD17B6) and four directionally consistent genes, rather than reporting all six as validated markers.
+**Second, cross-cohort validation and multivariable adjustment markedly improve reliability, and the residual evidence is graded rather than uniform.** Of 37 prognostic genes in TCGA, 34 of the 45 evaluable in both cohorts showed concordant direction in GSE14520 (76%), and six met the combined criterion of concordant direction plus significant Cox regression in the validation cohort. After adjustment for AJCC stage, age and sex, **NT5DC2 remained significant in both cohorts**, with an effect size slightly larger than the unadjusted estimate, making it the only independently prognostic host gene in this study. HSD17B6 retained significance in GSE14520 but fell just short of significance in TCGA (P = 0.052); BCLAF1, SREBF2, CD5 and LRCH1 lost significance altogether. We accordingly distinguish a single robust candidate (NT5DC2), one partially supported candidate (HSD17B6) and four directionally consistent genes, rather than reporting all six as validated markers.
 
 **Third, annotation quality is a first-order problem, and we were able to quantify how far it compromises inference.** circBank does not populate the commonly used `highConfidence`, `validated` and `conserved` fields for human entries (100% empty in every matched record we retrieved); coordinate systems differ systematically between sources; our own initial retrieval was incomplete. We addressed these by match-type stratification, binding-energy filtering, chromosomal harmonisation and completed re-retrieval, and we report the residual uncertainty explicitly. However, comparison with an independent resource (ENCORI/starBase, seven algorithms plus CLIP-seq and degradome-seq evidence) showed a Jaccard overlap of only 0.000–0.035 with our predictions. **The stratified framework therefore improves the internal coherence of a single prediction resource; it does not substitute for independent validation of the predicted interactions.**
 
@@ -173,17 +157,21 @@ We deliberately do not nominate a circRNA–miRNA axis for experimental follow-u
 
 ### 4.1 Data sources
 
+**Table 3 | Data sources**
+
 | Dataset | Platform / type | Sample size | Use |
 |---|---|---|---|
-| GSE122482 | circRNA expression microarray, GPL21290 | 10 pairs, HCC tumour / peritumour | Differential circRNA screening |
-| TCGA-LIHC | RNA-seq (FPKM) + clinical | 374 tumours | Prognostic modelling (discovery cohort) |
-| GSE14520 | Affymetrix GPL3921 + Extra Supplement clinical | 225 tumours | Independent validation cohort |
+| GSE122482 | RNA-seq, Illumina HiSeq 3000 (GPL21290) | 10 pairs, HCC tumour / peritumour | Differential circRNA screening |
+| TCGA-LIHC | RNA-seq (FPKM) + clinical | 377 primary tumours | Prognostic modelling (discovery cohort) |
+| GSE14520 | Affymetrix GPL3921 + Extra Supplement clinical | 247 tumours | Independent validation cohort |
 | circBank | database | 828,808 human circRNAs | circRNA annotation and miRNA binding prediction |
 | ENCORI/starBase | database | 7 prediction algorithms + CLIP-seq/degradome-seq | Independent check of miRNA predictions |
 
-**Genome builds and coordinate harmonisation.** GSE122482 reports circRNA coordinates in `chrN:start-end` notation (platform GPL21290) whereas circBank entries are written as `N:start-end`. Neither source states its genome build explicitly in the files we retrieved, so we could not verify that they are identical; **no liftOver between builds was performed**, and matching relied on coordinate identity after normalising the chromosome prefix alone. Because the two builds cannot be confirmed to agree, we treat a build difference as one possible explanation both for the residual unmatched candidates and for the MGC50722 and ADAMTS13 annotation conflict discussed in Section 2.1, and we flag this as a limitation rather than a resolved question. Readers reproducing the matching should confirm the builds before treating any coordinate-level match as exact.
+**Genome builds and coordinate harmonisation.** GSE122482 reports circRNA coordinates in `chrN:start-end` notation (Illumina HiSeq 3000, GPL21290) whereas circBank entries are written as `N:start-end`. Neither source states its genome build explicitly in the files we retrieved, so we could not verify that they are identical; **no liftOver between builds was performed**, and matching relied on coordinate identity after normalising the chromosome prefix alone. Because the two builds cannot be confirmed to agree, we treat a build difference as one possible explanation both for the residual unmatched candidates and for the MGC50722 and ADAMTS13 annotation conflict discussed in Section 2.1, and we flag this as a limitation rather than a resolved question. Readers reproducing the matching should confirm the builds before treating any coordinate-level match as exact.
 
-**Expression preprocessing.** For GSE122482, per-sample circRNA RPM tables were obtained from the GEO supplementary files (20 tables, one per sample) and used as delivered; no further normalisation was applied, and the same table set served both the differential screen and the annotation mapping. For GSE14520, Affymetrix probe-level values were taken from the GEO series matrix as delivered (log-transformed by the submitters) and collapsed to gene level by averaging probes mapping to the same gene symbol; no additional normalisation, batch correction or imputation was performed, and the cohort was analysed as a single batch because it comes from one series. For TCGA-LIHC, FPKM values for the 73 host genes were retrieved from the Genomic Data Commons via the harmonised STAR - Counts data set (`TCGA-LIHC.star_fpkm.tsv.gz`, Ensembl gene identifiers mapped to symbols) together with the corresponding clinical table, and log2-transformed (log2(FPKM + 1)) before z-scoring. Expression values entered all models as z-scores, so that hazard ratios are per standard deviation and are not affected by the different dynamic ranges of the three platforms. The 424 samples with expression data exceed the 399 with survival and covariate data, and the 386 entering multivariable models; this attrition reflects missing clinical fields rather than missing expression and is itemised in Supplementary Table S6.
+**Expression preprocessing.** For GSE122482, per-sample circRNA RPM tables were obtained from the GEO supplementary files (20 tables, one per sample) and used as delivered; no further normalisation was applied, and the same table set served both the differential screen and the annotation mapping. For GSE14520, Affymetrix probe-level values were taken from the GEO series matrix as delivered (log-transformed by the submitters) and collapsed to gene level by averaging probes mapping to the same gene symbol; no additional normalisation, batch correction or imputation was performed, and the cohort was analysed as a single batch because it comes from one series. For TCGA-LIHC, FPKM values for the 73 host genes were retrieved from the Genomic Data Commons via the harmonised STAR - Counts data set (`TCGA-LIHC.star_fpkm.tsv.gz`, Ensembl gene identifiers mapped to symbols) together with the corresponding clinical table, and log2-transformed (log2(FPKM + 1)) before z-scoring. Expression values entered all models as z-scores, so that hazard ratios are per standard deviation and are not affected by the different dynamic ranges of the three platforms.
+
+**Sample accounting for TCGA-LIHC (all figures refer to primary tumours only).** The GDC clinical table for this cohort lists 439 samples: 377 primary tumours (sample type 01), 59 solid tissue normals (11) and 3 recurrent tumours (02). The FPKM matrix has 424 columns, of which 371 are primary tumours and 53 are non-tumour; the survival table covers 433 samples. Restricting to primary tumours at every step gives the following funnel: **377 primary tumours → 371 with expression data → 365 with survival data → 347 with complete stage, age and sex → 341 also present in the expression matrix**, and those 341 are the samples entering the multivariable models (117 events). The univariable Cox and log-rank analyses reported in Table 1 and Fig. 3 use 367 tumours (130 events). Adjacent normal tissue and recurrent tumours were excluded throughout: normal tissue is not a prognostic observation, and recurrence samples do not share the initial-diagnosis survival structure of the discovery cohort. For GSE14520 the corresponding counts are 247 annotated tumour samples, of which 225 have complete clinical and survival data and 219 enter the multivariable models (84 events); the 445-sample expression matrix includes both tumour and non-tumour samples, and only tumour samples enter any analysis.
 
 Clinical data for GSE14520 were obtained from its Extra Supplement file, in which tissue type, survival status and survival time are recorded alongside sex (`M`/`F`) and TNM stage; only samples annotated as tumour were included. Immune cell feature gene sets were taken from the pan-cancer immunogenomic analysis of Charoentong and colleagues<sup>10</sup>, from which 27 lineage subsets evaluable in liver tissue were selected, using the representative genes reported therein.
 
@@ -205,13 +193,13 @@ circRNA identifiers follow the format `hsa_circ:chrN:start-end`. Host genes were
 
 The HR represents the change in hazard associated with a one-standard-deviation increase in expression.
 
-**Multivariable analysis.** Cox proportional hazards models were additionally fitted including AJCC pathologic stage (I/II vs III/IV), age (centred at 50 years) and sex as covariates, using R `survival::coxph` with Efron handling of tied event times (survival times are recorded in months or days and contain many ties). For GSE14520 the clinical variables were read from the Extra Supplement file, in which sex is coded `M`/`F` and stage in the `TNM staging` column as I/II/IIIA/IIIB/IIIC/IV; samples with missing stage, missing age or missing sex were excluded rather than assigned to a default category. Covariates were required to be present for a sample to enter a model, giving n = 386 (145 events) in TCGA-LIHC and n = 219 (84 events) in GSE14520. Numerical verification: all univariable Cox P values were recomputed with `survival::coxph` and compared with the pipeline's own implementation on identical sample sets; significance classification agreed for 9 of 9 genes in TCGA-LIHC and 6 of 9 in GSE14520, the three disagreements being genes whose P values lay between 0.03 and 0.09 and whose category therefore changed when the analysis set narrowed from 225 to 219 samples.
+**Multivariable analysis.** Cox proportional hazards models were additionally fitted including AJCC pathologic stage (I/II vs III/IV), age (centred at 50 years) and sex as covariates, using R `survival::coxph` with Efron handling of tied event times (survival times are recorded in months or days and contain many ties). For GSE14520 the clinical variables were read from the Extra Supplement file, in which sex is coded `M`/`F` and stage in the `TNM staging` column as I/II/IIIA/IIIB/IIIC/IV; samples with missing stage, missing age or missing sex were excluded rather than assigned to a default category. Covariates were required to be present for a sample to enter a model, giving n = 341 (117 events) in TCGA-LIHC and n = 219 (84 events) in GSE14520. Numerical verification: all univariable Cox P values were recomputed with `survival::coxph` and compared with the pipeline's own implementation on identical sample sets; significance classification agreed for 9 of 9 genes in TCGA-LIHC and 6 of 9 in GSE14520, the three disagreements being genes whose P values lay between 0.03 and 0.09 and whose category therefore changed when the analysis set narrowed from 225 to 219 samples.
 
 ### 4.5 Immune infiltration assessment
 
 For each gene a cellular composition score was constructed by taking the 27 lineage feature gene sets defined for liver tissue in the pan-cancer immunogenomic analysis of Charoentong and colleagues<sup>10</sup> and computing, for every sample, the mean of the within-sample expression ranks of the genes in each set (a rank-average signature score)<sup>11</sup>, an approach that captures coordinated expression of lineage markers without requiring cell-level resolution. It is not ssGSEA: no ECDF-based enrichment weighting is applied, and we therefore do not describe it as such. **The 27 sets are lineage signatures rather than exclusively immune lineages**: besides lymphoid and myeloid populations they include endothelial cells, cancer-associated fibroblasts and fibroblasts, which we retained because these compartments shape the tumour microenvironment and because the same reference defines them. We refer to them collectively as lineage signatures throughout. Pearson correlations between gene expression and each lineage score were computed separately in TCGA-LIHC and GSE14520, and **only gene–cell pairs that were directionally concordant across cohorts with |r| > 0.15 in both were retained**.
 
-COX proportional hazards models and log-rank tests were implemented according to standard methods<sup>13,14</sup>, and all multivariable models were fitted and reported through R `survival` as described in Section 4.4.
+Cox proportional hazards models and log-rank tests were implemented according to standard methods<sup>13,14</sup>, and all multivariable models were fitted and reported through R `survival` as described in Section 4.4.
 
 Retention required direction concordance across cohorts together with |r| > 0.15 in **both** cohorts; pairs failing either condition were excluded, including pairs that were directionally concordant but below the magnitude threshold in one cohort. The complete gene sets used are provided in the supplementary material so that the scoring can be reproduced independently of any single reference.
 
@@ -245,12 +233,12 @@ Data retrieval, format handling and file processing were performed in Python 3.1
 
 | Gene | HR (TCGA) | P_cox (TCGA) | P_logrank (TCGA) | HR (GSE14520) | P_cox (14520) | Adjusted HR (TCGA), P | Adjusted HR (14520), P | Interpretation |
 |---|---|---|---|---|---|---|---|---|
-| **NT5DC2** | 1.509 | 1.62 × 10⁻⁵ | 0.013 | 1.428 | 9.08 × 10⁻⁴ | **1.219, 0.019** | **1.267, 0.018** | **Independent in both cohorts** |
-| HSD17B6 | 0.756 | 1.23 × 10⁻³ | 0.067 | 0.678 | 4.20 × 10⁻⁴ | 0.866, 0.061 | 0.801, 0.033 | Supported in GSE14520; borderline in TCGA |
-| BCLAF1 | 1.133 | 0.086 | 0.248 | 1.218 | 0.039 | 1.061, 0.504 | 1.200, 0.114 | Directionally consistent only |
-| SREBF2 | 1.077 | 0.201 | 0.427 | 1.256 | 0.021 | 0.977, 0.782 | 1.247, 0.050 | Directionally consistent only (GSE14520 at the significance boundary, 95% CI 1.00–1.55) |
-| LRCH1 | 0.893 | 0.092 | 0.344 | 0.823 | 0.037 | 0.909, 0.258 | 0.846, 0.179 | Directionally consistent only |
-| CD5 | 0.877 | 0.063 | 0.0019 | 0.818 | 0.030 | 0.936, 0.456 | 0.815, 0.069 | Directionally consistent only |
+| **NT5DC2** | 1.509 | 1.62 × 10⁻⁵ | 0.013 | 1.428 | 9.08 × 10⁻⁴ | **1.388, 0.0004** | **1.267, 0.018** | **Independent in both cohorts** |
+| HSD17B6 | 0.756 | 1.23 × 10⁻³ | 0.067 | 0.678 | 4.20 × 10⁻⁴ | 0.847, 0.052 | 0.801, 0.033 | Supported in GSE14520; borderline in TCGA |
+| BCLAF1 | 1.133 | 0.086 | 0.248 | 1.218 | 0.039 | 1.100, 0.330 | 1.200, 0.114 | Directionally consistent only |
+| SREBF2 | 1.077 | 0.201 | 0.427 | 1.256 | 0.021 | 1.088, 0.378 | 1.247, 0.050 | Directionally consistent only (GSE14520 at the significance boundary, 95% CI 1.00–1.55) |
+| LRCH1 | 0.893 | 0.092 | 0.344 | 0.823 | 0.037 | 0.894, 0.235 | 0.846, 0.179 | Directionally consistent only |
+| CD5 | 0.877 | 0.063 | 0.0019 | 0.818 | 0.030 | 0.883, 0.228 | 0.815, 0.069 | Directionally consistent only |
 
 HR is the hazard ratio per one-standard-deviation increase in expression. Unadjusted columns reproduce the initial single-cohort analysis; adjusted columns are from Cox models including AJCC stage, age and sex, all of which were estimable in both cohorts. **Only NT5DC2 retains significance in both cohorts after adjustment**, and its adjusted effect size is close to its unadjusted value; sex was not a significant covariate in either cohort. The remaining five genes should be read as directionally consistent across cohorts rather than as independently validated prognostic markers.
 
@@ -264,9 +252,9 @@ Note that these are **host-gene mRNA** results. Neither validation cohort contai
 
 **Figure 2 | Structure of the circRNA–mRNA network.** The network comprises 103 circRNA nodes (outer ring) and 91 host gene nodes (inner ring); 47 circRNAs and 40 genes with prognostic significance or immune association are shown. Edges connect circRNAs to their host genes, with colour and width reflecting regulatory direction and magnitude of change. Gene node size indicates the number of associated circRNAs, and node colour reflects prognostic significance (dark red P_cox < 0.001, red P < 0.01, light red P < 0.05, grey not significant).
 
-**Figure 3 | Cross-cohort concordance of prognostic effects.** Scatter plot comparing hazard ratios (per one standard deviation) for the 45 host genes evaluable in both cohorts, in TCGA-LIHC (n = 374) and GSE14520 (n = 225). The diagonal is the perfect-concordance reference; horizontal and vertical dashed lines mark HR = 1. Green points indicate concordant direction across cohorts (34/45, 76%); red points indicate opposite directions.
+**Figure 3 | Cross-cohort concordance of prognostic effects.** Scatter plot comparing hazard ratios (per one standard deviation) for the 45 host genes evaluable in both cohorts, in TCGA-LIHC (n = 367 primary tumours) and GSE14520 (n = 219 tumours). The diagonal is the perfect-concordance reference; horizontal and vertical dashed lines mark HR = 1. Green points indicate concordant direction across cohorts (34/45, 76%); red points indicate opposite directions.
 
-**Figure 4 | Immune infiltration association matrix.** Pearson correlation between five genes and 21 immune cell types, showing only combinations that were directionally concordant in both cohorts with |r| > 0.15. Cell colour indicates the direction of correlation in TCGA (red positive, blue negative), colour intensity indicates |r|, and numbers within cells are the TCGA r values.
+**Figure 4 | Lineage signature association matrix.** Pearson correlation between five genes and 21 lineage signatures, showing only combinations that were directionally concordant in both cohorts with |r| > 0.15. Cell colour indicates the direction of correlation in TCGA (red positive, blue negative), colour intensity indicates |r|, and numbers within cells are the TCGA r values.
 
 **Figure 5 | Overall survival Kaplan–Meier curves for four prognostic genes.** (a–c) NT5DC2, (d–f) HSD17B6, (g–i) LRCH1 and (j–l) CD5, shown in TCGA-LIHC and GSE14520. Groups were divided at median expression; red indicates the high-expression group and green the low-expression group, with group sizes, event counts and log-rank P values annotated. Higher NT5DC2 expression was associated with poorer survival in both cohorts (TCGA log-rank P = 0.013; GSE14520 P = 0.005). Higher HSD17B6 expression was associated with better survival in GSE14520 (log-rank P = 0.007) but not significantly in TCGA (P = 0.067), consistent with its borderline multivariable result there. CD5 shows the reverse pattern: significant by log-rank in TCGA (P = 0.0019) but not in GSE14520 (P = 0.066), while its Cox P values are 0.063 and 0.030. LRCH1 is not significant by log-rank in either cohort (0.344 and 0.187). The two tests answer different questions — the log-rank test compares two median-split groups and is sensitive to differences in the shape of the survival curves, whereas the Cox model uses the continuous expression value and assumes proportional hazards — so a gene can be significant by one and not the other. We report both throughout and do not select between them.
 
@@ -337,10 +325,10 @@ Adjusted for AJCC stage (I/II vs III/IV), age (centred at 50 years) and sex. All
 
 | Cohort | n (events) | Term | HR (95% CI) | P |
 |---|---|---|---|---|
-| TCGA-LIHC | 386 (145) | NT5DC2 | 1.219 (1.033–1.439) | 0.0191 |
-| TCGA-LIHC | 386 (145) | stage III/IV | 1.720 (1.221–2.424) | 0.0019 |
-| TCGA-LIHC | 386 (145) | age (per year, centred) | 1.009 (0.996–1.022) | 0.182 |
-| TCGA-LIHC | 386 (145) | male | 1.007 (0.710–1.427) | 0.970 |
+| TCGA-LIHC | 341 (117) | NT5DC2 | 1.388 (1.156–1.666) | 0.00045 |
+| TCGA-LIHC | 341 (117) | stage III/IV | 1.738 (1.179–2.562) | 0.0053 |
+| TCGA-LIHC | 341 (117) | age (per year, centred) | 1.012 (0.997–1.027) | 0.106 |
+| TCGA-LIHC | 341 (117) | male | 0.960 (0.651–1.416) | 0.838 |
 | GSE14520 | 219 (84) | NT5DC2 | 1.267 (1.041–1.542) | 0.0184 |
 | GSE14520 | 219 (84) | stage III/IV | 3.143 (1.980–4.990) | 1.20 × 10⁻⁶ |
 | GSE14520 | 219 (84) | age (per year, centred) | 0.995 (0.973–1.016) | 0.611 |
@@ -352,14 +340,16 @@ Results for all six genes are given in the associated data archive.
 
 | | TCGA-LIHC | GSE14520 |
 |---|---|---|
-| Samples with expression data | 424 | 445 |
-| Samples with survival and covariate data | 399 | 225 |
-| Samples entering multivariable models | 386 (145 events) | 219 (84 events) |
-| Sex, male / female (in models) | 258 / 128 | 189 / 30 |
-| Stage I/II / III-IV (in models) | 190 / 196 | 170 / 49 |
+| Annotated samples in the source cohort | 439 (377 tumour, 59 normal, 3 recurrent) | 247 tumour |
+| Primary tumours with expression data | 371 | 225 |
+| With survival data | 365 | 225 |
+| With complete stage, age and sex | 347 | 225 |
+| Entering multivariable models | 341 (117 events) | 219 (84 events) |
+| Sex, male / female (in models) | 232 / 109 | 189 / 30 |
+| Stage I/II / III-IV (in models) | 170 / 171 | 170 / 49 |
 | Median age, years (range) | 61 (16–85) | 50 (21–77) |
 
-Sex and stage distributions of the GSE14520 cohort were verified directly against the Extra Supplement clinical file: sex is coded `M`/`F` (211 male and 31 female among all 247 tumour samples, 189/30 among the 219 entering the models) and stage in the `TNM staging` column (I, II, IIIA, IIIB, IIIC and IV grouped as I/II versus III/IV). Samples with missing sex, stage or age, or with non-positive survival time, were excluded rather than assigned a default value.
+Only primary tumours are counted in the TCGA-LIHC column; solid tissue normals and recurrent tumours are excluded at the first step, and the GSE14520 column likewise counts tumour samples only (the 445-sample expression matrix there contains both tumour and non-tumour samples). Sex and stage distributions were verified directly against the source clinical files: GSE14520 codes sex as `M`/`F` (211 male and 31 female among all 247 tumour samples) and stage in the `TNM staging` column (I, II, IIIA, IIIB, IIIC and IV grouped as I/II versus III/IV); TCGA-LIHC sample type comes from the GDC `sample_type.samples` field. Samples with missing sex, stage or age, or with non-positive survival time, were excluded rather than assigned a default value.
 
 ---
 
@@ -367,9 +357,9 @@ Sex and stage distributions of the GSE14520 cohort were verified directly agains
 
 1. Bray F, Ferlay J, Soerjomataram I, Siegel RL, Jemal A. Global cancer statistics 2018: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. *CA Cancer J Clin.* 2018;68(6):394–424. doi:10.3322/caac.21692
 2. Forner P, Llovet JM, Bruix J. Hepatocellular carcinoma. *Lancet.* 2011;378(9784):203–217. doi:10.1016/S0140-6736(10)60381-6
-3. Jeck WR, Sharpless NE. Detecting and removing non-templated introns from mature circular RNAs. *Cell.* 2013;155(4):873–884. doi:10.1016/j.cell.2013.09.029
+3. Jeck WR, Sharpless NE. Detecting and characterizing circular RNAs. *Nat Biotechnol.* 2014;32(5):453–461. doi:10.1038/nbt.2890
 4. Enuka Y, Lauriola M, Feldman ME, Sas-Chen A, Ulitsky I, Yarden Y. Circular RNAs are long-lived and display only minimal early alterations in response to a growth factor. *Nucleic Acids Res.* 2016;44(3):1370–1383. doi:10.1093/nar/gkv1367
-5. Li Z, Ruan K, Jin C, et al. Circular RNA-mediated miRNA sponge promotes tumorigenesis. *Cancer Res.* 2019;79(7):1652–1666. doi:10.1158/0008-5472.CAN-18-1563
+5. Chen G, Shi Y, Liu M, Sun J. circHIPK3 regulates cell proliferation and migration by sponging miR-124 and regulating AQP3 expression in hepatocellular carcinoma. *Cell Death Dis.* 2018;9(3):306. doi:10.1038/s41419-017-0204-3
 6. Hentze MW, Hon CC, Isozaki Y, et al. Circular RNAs: a new class of sponge molecules. *Mol Cell.* 2018;71(6):884–890. doi:10.1016/j.molcel.2018.08.017
 7. Lou J, Yu C, Li C, et al. Circular RNA circRNA_100876 promotes HCC metastasis through the miRNA-665/PRC1 complex. *J Exp Clin Cancer Res.* 2021;40(1):326. doi:10.1186/s13046-021-01948-0
 8. Salmena L, Poliseno L, Tay Y, Kats L, Pandolfi PP. A ceRNA hypothesis: the Rosetta Stone of a hidden RNA language. *Cell.* 2011;146(3):353–358. doi:10.1016/j.cell.2011.07.013
@@ -420,6 +410,6 @@ This study constitutes secondary analysis of publicly available data and involve
 
 **Correspondence**: Wanli He, School of Medicine, Shangqiu Institute of Technology, Shangqiu, China. hewanli66@126.com
 
-**Article type**: Article. **Main text**: approximately 2,000 words (limit 4,500). **Abstract**: 195 words (limit 200). **Display items**: 7 figures and 1 main table, plus 6 supplementary tables. **References**: 22.
+**Article type**: Article. **Main text**: approximately 2,100 words (limit 4,500). **Abstract**: 201 words (limit 200). **Display items**: 7 figures and 3 tables (Tables 1–3), plus 6 supplementary tables (S1–S6). **References**: 22.
 
 **Use of large language models**: An LLM was used during manuscript language editing and formatting. All data analysis, result interpretation and conclusions remain the responsibility of the author, who reviewed and verified the content.
