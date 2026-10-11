@@ -1,9 +1,9 @@
 # MANIFEST — SHA256 and size of every archived file
 
 193ac70edff0e68bc798fc9504b05275564c16d1dc84af403fa95a83fa47172c          91  .gitignore
-b20307044db575b51e893bd585f0db47a8af4ee8ac4e35b56d6e76f8dd63d1ef         556  CITATION.cff
+c6e1bfeec86cf80d12a20ccd54ecbede296e00b5db1b379211d3505ae26fbb0e         556  CITATION.cff
 5ef41f765039431797af83f58617eb433f79eb5d0682966261b8788d524b4770         862  LICENSE
-68a2c3098d2d6a330f2a9d3add38799b0cfcb2164ae689043b27e70f4021adf7        5559  README.md
+a8a0fae85a494e89a57aec7a19508003030ed9b84fe3ca03fd87cd98cd61c44b        5559  README.md
 bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
 eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
 f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
