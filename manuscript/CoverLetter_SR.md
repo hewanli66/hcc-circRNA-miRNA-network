@@ -12,23 +12,25 @@ hewanli66@126.com｜ORCID 0009-0002-0829-1909
 
 Dear Editors,
 
-We submit for your consideration the manuscript **"Cross-cohort circRNA–miRNA–mRNA network analysis identifies NT5DC2 and HSD17B6 as prognostic markers in hepatocellular carcinoma"** for publication as an Article in *Scientific Reports*.
+We submit for your consideration the manuscript **"Host genes of differentially expressed circRNAs show consistent cross-cohort prognostic value in hepatocellular carcinoma"** for publication as an Article in *Scientific Reports*.
 
 ## Why this work suits Scientific Reports
 
-Your journal assesses manuscripts on **scientific validity and technical soundness rather than perceived importance or impact**, and explicitly welcomes computational and bioinformatics analyses. This study is a computational analysis of public data, reported with that degree of methodological transparency: all code was written using the Python standard library with no third-party packages, and every quantity reported in the manuscript is an actual computed value. We have taken care to state our limitations plainly rather than to frame computational predictions as established mechanism (Section 3.4).
+Your journal assesses manuscripts on **scientific validity and technical soundness rather than perceived importance or impact**, and explicitly welcomes computational and bioinformatics analyses. This study is a computational analysis of public data, reported with that degree of methodological transparency: data retrieval and file handling were performed in Python, and **all statistical inference was performed in R 4.6.1** (`survival::coxph` with Efron ties for the survival models, `stats::p.adjust(method = "BH")` for false discovery rates). Every quantity reported in the manuscript is a computed value, and the survival statistics were independently recomputed with a second implementation as a numerical check. We have taken care to state our limitations plainly rather than to frame computational predictions as established mechanism (Section 3.4).
 
 ## What the study shows
 
-We screened 103 differentially expressed circRNAs in paired HBV-related HCC tissue (GSE122482), evaluated the prognostic value of their host genes in TCGA-LIHC (374 tumours) and in the independent GSE14520 cohort (225 tumours), and integrated circBank miRNA binding predictions to build a circRNA–miRNA–mRNA network of 14,568 edges.
+We screened 103 differentially expressed circRNAs in paired HBV-related HCC tissue (GSE122482), evaluated the prognostic value of their host genes in TCGA-LIHC (374 tumours) and in the independent GSE14520 cohort (225 tumours), and integrated circBank miRNA binding predictions to build a circRNA–miRNA–mRNA network of 15,479 edges.
 
-Three points may interest your readership:
+Four points may interest your readership:
 
-1. **Cross-cohort validation materially changes the picture.** Of 37 host genes significant in TCGA, 34 showed concordant direction in GSE14520 (76%), but only six passed the combined criterion of concordant direction plus significant COX regression in the validation cohort. We report this explicitly rather than presenting the discovery-cohort result alone.
+1. **The claims are graded by what the data actually support.** The survival analyses were performed on linear host-gene mRNAs, not on circRNAs: neither validation cohort contains circRNA expression data, and GSE122482 provides circRNA read counts without matched mRNA quantification. We state this explicitly in the title, abstract and Results, and describe the markers accordingly as host-gene-level mRNA markers, with circRNA-level prognostic value identified as untested.
 
-2. **Two genes are robust in both cohorts.** NT5DC2 and HSD17B6 were significant by COX regression in both TCGA and GSE14520 (HR 1.51 and 1.43; and 0.76 and 0.68, with opposite directions). We deliberately distinguish these two from the remaining four validated genes, whose TCGA COX P values range from 0.063 to 0.201 and whose evidence is correspondingly weaker.
+2. **Multivariable adjustment leaves a single robust candidate.** Of 37 host genes significant in TCGA, 34 showed concordant direction in GSE14520 (76%) and six passed the combined validation criterion. After adjustment for AJCC stage, age and sex, **only NT5DC2 remained significant in both cohorts** (adjusted HR 1.22, P = 0.019; 1.27, P = 0.017) with an essentially unchanged effect size, indicating that its association is not attributable to the clinical covariates. HSD17B6 reached significance in GSE14520 but was borderline in TCGA (P = 0.061); the remaining four lost significance. We report this graded outcome rather than presenting all six as validated markers.
 
-3. **A practical annotation issue is addressed.** circBank leaves `highConfidence`, `validated` and `conserved` empty for human entries (100% empty in our matched set), and coordinate conventions differ systematically between data sources — GSE122482 uses `chrN` whereas circBank uses `N`. Harmonising chromosome names raised our matching rate from 32% to 92%. For genes matched only by fallback we propose an indirect-support criterion, which certifies a predicted miRNA when that miRNA is independently connected to several exactly matched genes. This certifies 51.2% of the miRNAs attached to NT5DC2.
+3. **We report what multiplicity correction does to the screen.** Across 92,204 circRNA features, 5,649 pass an uncorrected P < 0.05 but only 3 reach BH-FDR < 0.05, and only 2 of our 103 candidates do so. The original rationale—that cross-cohort validation would control the false-positive rate—does not hold, because the validation cohorts test a different hypothesis in different data; we say so and treat the screen as exploratory.
+
+4. **We tested our own annotation heuristic and report the negative result.** All circRNA–miRNA edges derive from a single resource (circBank), which provides no quality flags for human entries. Comparing with ENCORI/starBase (seven independent algorithms plus CLIP-seq and degradome-seq evidence) gave a Jaccard overlap of only 0.000–0.035, and none of those algorithms supports the candidate interaction we had highlighted in an earlier version. We accordingly withdraw that nomination, reframe connectivity-based grading as internal consistency rather than cross-validation, and state the evidentiary limits in Methods and Discussion.
 
 ## Disclosure of prior use of the same dataset
 
@@ -36,7 +38,7 @@ We wish to disclose this proactively. The circRNA expression dataset (GSE122482)
 
 ## Statements
 
-The manuscript contains no competing interests. The author received no financial support for this work. All primary data are publicly available from their original repositories and are not redistributed. All derived materials — result tables, the complete analysis pipeline, figure files and manuscript materials — are archived at Zenodo (DOI assigned on acceptance); the archive includes a SHA256 manifest and a README documenting the execution order and Python version.
+The manuscript contains no competing interests. The author received no financial support for this work. All primary data are publicly available from their original repositories and are not redistributed. All derived materials — result tables, the complete analysis pipeline, figure files and manuscript materials — are archived at Zenodo (https://doi.org/10.5281/zenodo.23293108); the archive includes a SHA256 manifest and a README documenting the execution order and the software versions used.
 
 We have not previously submitted this manuscript to any journal, and it is not under consideration elsewhere. All authors approve the submission.
 

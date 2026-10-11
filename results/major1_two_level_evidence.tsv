@@ -1,0 +1,7 @@
+gene	circRNA	circRNA_log2FC	circRNA_direction	mRNA_HR_TCGA	mRNA_prognostic
+NT5DC2	hsa_circ:chr3:52524261-52524592	3.1583	up in tumour	1.5085	high = worse survival
+HSD17B6	hsa_circ:chr12:56754955-56755968	-1.1393	down in tumour	0.7559	high = better survival
+BCLAF1	hsa_circ:chr6:136215633-136268662	-1.1308	down in tumour	1.1328	high = worse survival
+SREBF2	hsa_circ:chr22:41855945-41856491	1.1896	up in tumour	1.0769	high = worse survival
+CD5	hsa_circ:chr11:61102092-61113418	-1.2726	down in tumour	0.8773	high = better survival
+LRCH1	hsa_circ:chr13:46658354-46673078	-1.0449	down in tumour	0.8926	high = better survival

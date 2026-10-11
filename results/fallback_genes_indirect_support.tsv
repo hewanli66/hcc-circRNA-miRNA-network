@@ -1,29 +1,29 @@
 gene	n_edges	n_mirna	n_strong	n_moderate	n_weak	n_none	pct_supported	HR_TCGA	P_cox_TCGA	HR_14520	P_cox_14520	cross_cohort	immune_max_r	immune_cell_types	validated	n_mirna_immune_linked	top_miRNA	top_miRNA_support
-TRIOBP	999	599	140	499	226	134	64.0	1.0779	0.195996	1.1028	0.182576	YES	0.0000			443	hsa-miR-4660;hsa-miR-4660;hsa-miR-4660;hsa-miR-4706;hsa-miR-4706	9个exact基因;9个exact基因;9个exact基因;8个exact基因;8个exact基因
-PPFIA3	1000	631	147	457	244	152	60.4	1.419	0.00012196	0.8775	0.113258	no	0.0000			386	hsa-miR-4660;hsa-miR-4660;hsa-miR-4706;hsa-miR-4706;hsa-miR-4518	9个exact基因;9个exact基因;8个exact基因;8个exact基因;7个exact基因
-FLAD1	1000	727	93	479	255	173	57.2	1.3238	0.000689776	0.9801	0.425903	no	0.0000			303	hsa-miR-4660;hsa-miR-4498;hsa-miR-4632-5p;hsa-miR-4763-3p;hsa-miR-4741	9个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-BCL2L2-PABPN1	1000	739	99	432	251	218	53.1	1.0682	0.220014				0.0000			310	hsa-miR-4660;hsa-miR-874-5p;hsa-miR-4632-5p;hsa-miR-1207-5p;hsa-miR-874-5p	9个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-C20orf27	500	363	79	220	119	82	59.8	1.3743	0.000185586				0.0000			207	hsa-miR-4498;hsa-miR-1207-5p;hsa-miR-4632-5p;hsa-miR-4763-3p;hsa-miR-4722-5p	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-HGFAC	470	364	51	240	99	80	61.9	0.8004	0.00494177	0.9158	0.200055	YES	0.0000			177	hsa-miR-1827;hsa-miR-4498;hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-4651	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-ZBTB37	500	421	46	216	119	119	52.4	0.9852	0.429438				0.0000			174	hsa-miR-4632-5p;hsa-miR-4741;hsa-miR-4498;hsa-miR-608;hsa-miR-4518	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-PMF1	376	324	46	170	95	65	57.4	1.1078	0.10622	0.9615	0.358561	no	0.0000			118	hsa-miR-4660;hsa-miR-4498;hsa-miR-4722-5p;hsa-miR-1184;hsa-miR-1248	9个exact基因;7个exact基因;7个exact基因;6个exact基因;6个exact基因
-NT5DC2	391	357	32	168	102	89	51.2	1.5085	1.6213e-05	1.4283	0.000907869	YES	0.0175		YES	110	hsa-miR-4706;hsa-miR-874-5p;hsa-miR-4518;hsa-miR-4722-5p;hsa-miR-4741	8个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-RPS6KA3	465	418	21	163	138	143	39.6	1.1769	0.0282273	1.0222	0.421263	YES	0.0000			91	hsa-miR-4632-5p;hsa-miR-4632-5p;hsa-miR-1248;hsa-miR-1248;hsa-miR-4763-5p	7个exact基因;7个exact基因;6个exact基因;6个exact基因;6个exact基因
-HIST2H4B	264	127	14	98	44	108	42.4	1.1306	0.106396				0.0000			54	hsa-miR-185-3p;hsa-miR-185-3p;hsa-miR-1301-3p;hsa-miR-1301-3p;hsa-miR-650	6个exact基因;6个exact基因;6个exact基因;6个exact基因;5个exact基因
-CD80	219	207	16	90	61	52	48.4	1.1204	0.0849264	0.9866	0.454488	no	0.0000			49	hsa-miR-4632-5p;hsa-miR-3972;hsa-miR-6871-5p;hsa-miR-4667-3p;hsa-miR-665	7个exact基因;6个exact基因;6个exact基因;6个exact基因;6个exact基因
-ZNF517	149	144	17	67	37	28	56.4	1.1023	0.140366				0.0000			43	hsa-miR-939-5p;hsa-miR-3972;hsa-miR-588;hsa-miR-3157-5p;hsa-miR-588	6个exact基因;6个exact基因;5个exact基因;5个exact基因;5个exact基因
-PPCDC	144	136	16	63	30	35	54.9	1.1013	0.125434	1.1619	0.0936884	YES	0.0000			42	hsa-miR-4741;hsa-miR-4722-5p;hsa-miR-4763-3p;hsa-miR-185-3p;hsa-miR-6511a-5p	7个exact基因;7个exact基因;7个exact基因;6个exact基因;6个exact基因
-TMEM179	93	80	13	53	19	8	71.0	1.3467	0.00134115				0.0000			31	hsa-miR-4706;hsa-miR-12128;hsa-miR-4706;hsa-miR-708-5p;hsa-miR-665	8个exact基因;8个exact基因;8个exact基因;6个exact基因;6个exact基因
-ARHGAP33	100	91	10	52	29	9	62.0	1.238	0.00928781	0.8324	0.0418958	no	0.0000			39	hsa-miR-4722-5p;hsa-miR-1205;hsa-miR-6798-5p;hsa-miR-939-5p;hsa-miR-6798-5p	7个exact基因;6个exact基因;6个exact基因;6个exact基因;6个exact基因
-RPLP0P2	120	111	7	54	29	30	50.8	1.124	0.124724				0.0000			35	hsa-miR-708-5p;hsa-miR-378g;hsa-miR-660-3p;hsa-miR-766-3p;hsa-miR-3187-5p	6个exact基因;5个exact基因;5个exact基因;5个exact基因;5个exact基因
-HIST1H2BD	89	81	6	47	19	17	59.6	0.9217	0.178965				0.0000			34	hsa-miR-608;hsa-miR-3937;hsa-miR-4435;hsa-miR-650;hsa-miR-10394-5p	7个exact基因;5个exact基因;5个exact基因;5个exact基因;5个exact基因
-HIST1H1C	92	78	10	38	23	21	52.2	0.9072	0.132047				0.0000			25	hsa-miR-1248;hsa-miR-1248;hsa-miR-185-3p;hsa-miR-1248;hsa-miR-3194-5p	6个exact基因;6个exact基因;6个exact基因;6个exact基因;6个exact基因
-APH1A	69	66	4	32	17	16	52.2	1.3052	0.0010406	1.0855	0.229621	YES	0.0000			19	hsa-miR-12128;hsa-miR-328-5p;hsa-miR-4726-5p;hsa-miR-6752-5p;hsa-miR-432-5p	8个exact基因;6个exact基因;5个exact基因;5个exact基因;4个exact基因
-MT1A	50	40	15	16	5	14	62.0	0.9315	0.21183				0.0000			13	hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-4498;hsa-miR-4722-5p	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
-EPB41L5	57	53	4	25	20	8	50.9	1.0365	0.337554	1.0399	0.361588	YES	0.0000			16	hsa-miR-10394-5p;hsa-miR-766-3p;hsa-miR-4685-5p;hsa-miR-4685-5p;hsa-miR-4436a	5个exact基因;5个exact基因;5个exact基因;5个exact基因;4个exact基因
-ZNF346	48	44	3	25	12	8	58.3	1.5105	1.79159e-05				0.0000			19	hsa-miR-4685-5p;hsa-miR-4446-3p;hsa-miR-4685-5p;hsa-miR-589-5p;hsa-miR-3065-3p	5个exact基因;5个exact基因;5个exact基因;4个exact基因;4个exact基因
-CCDC40	38	33	1	20	6	11	55.3	1.2976	0.00261921	1.0075	0.472843	YES	0.0000			11	hsa-miR-6813-5p;hsa-miR-760;hsa-miR-502-5p;hsa-miR-320a-5p;hsa-miR-3194-3p	5个exact基因;4个exact基因;4个exact基因;4个exact基因;4个exact基因
-ERP27	53	52	3	17	18	15	37.7	1.0258	0.39077				0.0000			13	hsa-miR-3187-3p;hsa-miR-3187-3p;hsa-miR-6823-5p;hsa-miR-296-3p;hsa-miR-6868-3p	6个exact基因;6个exact基因;5个exact基因;4个exact基因;4个exact基因
-RP11-44F21.3	33	30	0	15	8	10	45.5	1.339	0.00848246				0.0000			8	hsa-miR-4690-5p;hsa-miR-3619-5p;hsa-miR-214-3p;hsa-miR-6874-5p;hsa-miR-1843	4个exact基因;4个exact基因;3个exact基因;3个exact基因;3个exact基因
-HIST1H4C	46	44	1	13	13	19	30.4	1.0654	0.237554				0.0000			17	hsa-miR-1236-3p;hsa-miR-197-3p;hsa-miR-4308;hsa-miR-1228-3p;hsa-miR-29a-3p	5个exact基因;4个exact基因;3个exact基因;3个exact基因;3个exact基因
+TRIOBP	999	599	221	515	180	83	73.7	1.0779	0.195996	1.1028	0.182576	YES	0.0000			533	hsa-miR-4660;hsa-miR-4660;hsa-miR-608;hsa-miR-4660;hsa-miR-4651	9个exact基因;9个exact基因;9个exact基因;9个exact基因;9个exact基因
+PPFIA3	1000	631	221	493	192	94	71.4	1.419	0.00012196	0.8775	0.113258	no	0.0000			518	hsa-miR-4660;hsa-miR-4660;hsa-miR-4651;hsa-miR-608;hsa-miR-4651	9个exact基因;9个exact基因;9个exact基因;9个exact基因;9个exact基因
+FLAD1	1000	727	153	501	233	113	65.4	1.3238	0.000689776	0.9801	0.425903	no	0.0000			426	hsa-miR-4660;hsa-miR-4651;hsa-miR-1205;hsa-miR-1184;hsa-miR-6798-5p	9个exact基因;9个exact基因;8个exact基因;8个exact基因;8个exact基因
+BCL2L2-PABPN1	1000	739	145	483	222	150	62.8	1.0682	0.220014				0.0000			444	hsa-miR-4660;hsa-miR-608;hsa-miR-6756-5p;hsa-miR-6756-5p;hsa-miR-665	9个exact基因;9个exact基因;8个exact基因;8个exact基因;7个exact基因
+C20orf27	500	363	102	236	105	57	67.6	1.3743	0.000185586				0.0000			232	hsa-miR-4651;hsa-miR-4651;hsa-miR-608;hsa-miR-4651;hsa-miR-608	9个exact基因;9个exact基因;9个exact基因;9个exact基因;9个exact基因
+HGFAC	470	364	89	242	86	53	70.4	0.8004	0.00494177	0.9158	0.200055	YES	0.0000			219	hsa-miR-4651;hsa-miR-608;hsa-miR-4722-5p;hsa-miR-1205;hsa-miR-4722-5p	9个exact基因;9个exact基因;8个exact基因;8个exact基因;8个exact基因
+ZBTB37	500	421	76	218	107	99	58.8	0.9852	0.429438				0.0000			220	hsa-miR-608;hsa-miR-4518;hsa-miR-4722-5p;hsa-miR-665;hsa-miR-4632-5p	9个exact基因;8个exact基因;8个exact基因;7个exact基因;7个exact基因
+PMF1	376	324	75	180	72	49	67.8	1.1078	0.10622	0.9615	0.358561	no	0.0000			173	hsa-miR-4660;hsa-miR-1184;hsa-miR-1205;hsa-miR-4722-5p;hsa-miR-1184	9个exact基因;8个exact基因;8个exact基因;8个exact基因;8个exact基因
+NT5DC2	391	357	56	186	85	64	61.9	1.5085	1.6213e-05	1.4283	0.000907869	YES	0.0175		YES	160	hsa-miR-1184;hsa-miR-4518;hsa-miR-4722-5p;hsa-miR-4706;hsa-miR-6756-5p	8个exact基因;8个exact基因;8个exact基因;8个exact基因;8个exact基因
+RPS6KA3	465	418	33	187	123	122	47.3	1.1769	0.0282273	1.0222	0.421263	YES	0.0000			137	hsa-miR-1205;hsa-miR-1248;hsa-miR-1248;hsa-miR-4632-5p;hsa-miR-6511a-5p	8个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
+CD80	219	207	24	104	50	41	58.4	1.1204	0.0849264	0.9866	0.454488	no	0.0000			75	hsa-miR-6756-5p;hsa-miR-3972;hsa-miR-4632-5p;hsa-miR-665;hsa-miR-939-5p	8个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
+HIST2H4B	264	127	24	96	46	98	45.5	1.1306	0.106396				0.0000			72	hsa-miR-1301-3p;hsa-miR-1301-3p;hsa-miR-9851-5p;hsa-miR-9851-5p;hsa-miR-185-3p	7个exact基因;7个exact基因;6个exact基因;6个exact基因;6个exact基因
+ZNF517	149	144	25	71	38	15	64.4	1.1023	0.140366				0.0000			67	hsa-miR-4673;hsa-miR-4673;hsa-miR-939-5p;hsa-miR-671-5p;hsa-miR-3972	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
+PPCDC	144	136	26	59	31	28	59.0	1.1013	0.125434	1.1619	0.0936884	YES	0.0000			59	hsa-miR-4722-5p;hsa-miR-4741;hsa-miR-6511a-5p;hsa-miR-4763-3p;hsa-miR-509-3-5p	8个exact基因;7个exact基因;7个exact基因;7个exact基因;6个exact基因
+ARHGAP33	100	91	15	61	16	8	76.0	1.238	0.00928781	0.8324	0.0418958	no	0.0000			54	hsa-miR-1205;hsa-miR-6798-5p;hsa-miR-4722-5p;hsa-miR-6798-5p;hsa-miR-10394-5p	8个exact基因;8个exact基因;8个exact基因;8个exact基因;7个exact基因
+TMEM179	93	80	17	55	15	6	77.4	1.3467	0.00134115				0.0000			35	hsa-miR-4706;hsa-miR-12128;hsa-miR-4706;hsa-miR-665;hsa-miR-671-5p	8个exact基因;8个exact基因;8个exact基因;7个exact基因;7个exact基因
+RPLP0P2	120	111	10	59	30	21	57.5	1.124	0.124724				0.0000			53	hsa-miR-378g;hsa-miR-660-3p;hsa-miR-708-5p;hsa-miR-766-3p;hsa-miR-4739	6个exact基因;6个exact基因;6个exact基因;6个exact基因;6个exact基因
+HIST1H1C	92	78	12	45	23	12	62.0	0.9072	0.132047				0.0000			49	hsa-miR-1248;hsa-miR-1248;hsa-miR-1248;hsa-miR-1913;hsa-miR-3972	7个exact基因;7个exact基因;7个exact基因;7个exact基因;7个exact基因
+HIST1H2BD	89	81	18	39	22	10	64.0	0.9217	0.178965				0.0000			46	hsa-miR-608;hsa-miR-10394-5p;hsa-miR-671-5p;hsa-miR-432-5p;hsa-miR-6842-5p	9个exact基因;7个exact基因;7个exact基因;6个exact基因;6个exact基因
+APH1A	69	66	6	38	14	11	63.8	1.3052	0.0010406	1.0855	0.229621	YES	0.0000			28	hsa-miR-12128;hsa-miR-432-5p;hsa-miR-4726-5p;hsa-miR-328-5p;hsa-miR-6752-5p	8个exact基因;6个exact基因;6个exact基因;6个exact基因;6个exact基因
+EPB41L5	57	53	6	28	17	6	59.6	1.0365	0.337554	1.0399	0.361588	YES	0.0000			22	hsa-miR-10394-5p;hsa-miR-766-3p;hsa-miR-4685-5p;hsa-miR-4685-5p;hsa-miR-6738-3p	7个exact基因;6个exact基因;6个exact基因;6个exact基因;5个exact基因
+MT1A	50	40	17	17	4	12	68.0	0.9315	0.21183				0.0000			19	hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-4722-5p;hsa-miR-10394-5p	8个exact基因;8个exact基因;8个exact基因;8个exact基因;7个exact基因
+ZNF346	48	44	6	27	8	7	68.8	1.5105	1.79159e-05				0.0000			24	hsa-miR-4685-5p;hsa-miR-4685-5p;hsa-miR-199a-5p;hsa-miR-1294;hsa-miR-199b-5p	6个exact基因;6个exact基因;5个exact基因;5个exact基因;5个exact基因
+CCDC40	38	33	4	22	4	8	68.4	1.2976	0.00261921	1.0075	0.472843	YES	0.0000			17	hsa-miR-320a-5p;hsa-miR-6813-5p;hsa-miR-2467-5p;hsa-miR-3194-3p;hsa-miR-4779	5个exact基因;5个exact基因;5个exact基因;5个exact基因;4个exact基因
+ERP27	53	52	5	20	14	14	47.2	1.0258	0.39077				0.0000			19	hsa-miR-3187-3p;hsa-miR-3187-3p;hsa-miR-6823-5p;hsa-miR-296-3p;hsa-miR-6868-3p	6个exact基因;6个exact基因;6个exact基因;5个exact基因;5个exact基因
+HIST1H4C	46	44	3	14	12	17	37.0	1.0654	0.237554				0.0000			20	hsa-miR-1236-3p;hsa-miR-1228-3p;hsa-miR-197-3p;hsa-miR-3127-3p;hsa-miR-6799-3p	6个exact基因;5个exact基因;5个exact基因;4个exact基因;4个exact基因
+RP11-44F21.3	33	30	1	15	7	10	48.5	1.339	0.00848246				0.0000			8	hsa-miR-3619-5p;hsa-miR-214-3p;hsa-miR-4690-5p;hsa-miR-761;hsa-miR-5581-3p	5个exact基因;4个exact基因;4个exact基因;3个exact基因;3个exact基因
 MEG3	24	11	2	8	6	8	41.7	0.9613	0.327912	1.0171	0.438688	no	0.0000			4	hsa-miR-769-3p;hsa-miR-769-3p;hsa-miR-4654;hsa-miR-4654;hsa-miR-4727-3p	5个exact基因;5个exact基因;3个exact基因;3个exact基因;2个exact基因

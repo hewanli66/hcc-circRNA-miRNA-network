@@ -1,0 +1,7 @@
+metric	value
+circRNA_nodes	103
+gene_nodes	91
+multi_circRNA_genes	CYP4F23P;GALP;HIST2H4B;LMNA;MEG3;MGC50722;RBM19;TMEM179;ZNF250
+TCGA_dual_significant	25
+cross_cohort_validated	HSD17B6;CD5;BCLAF1;SREBF2;NT5DC2;LRCH1
+genes_with_immune_link	7

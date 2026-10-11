@@ -120,12 +120,12 @@ support(m, g) = |{ g' : m connects to g', match_type(g') = exact, g' ≠ g }|
 
 | Tier | Rule | Count (NT5DC2) |
 |---|---|---|
-| strong | support ≥ 5 | 32 |
-| moderate | 2 ≤ support ≤ 4 | 168 |
-| weak | support = 1 | 102 |
-| none | support = 0 | 89 |
+| strong | support ≥ 5 | 28 |
+| moderate | 2 ≤ support ≤ 4 | 151 |
+| weak | support = 1 | 91 |
+| none | support = 0 | 87 |
 
-For NT5DC2, strong plus moderate accounts for 51.2% of its 357 miRNAs. The logic is that a miRNA independently connected to several exactly matched genes has received consistent endorsement from circBank across separate loci, which corroborates the prediction for the fallback-matched gene.
+For NT5DC2, strong plus moderate accounts for 50.1% of its 357 miRNAs. Counts here are per unique miRNA; a small number of miRNAs appear more than once in the edge-level file because they bind more than one circRNA of the same gene. The logic is that a miRNA independently connected to several exactly matched genes has received consistent endorsement from circBank across separate loci, which corroborates the prediction for the fallback-matched gene.
 
 ---
 
@@ -180,7 +180,7 @@ We were unable to cross-match the circRNA identifiers used in the two prior stud
 
 ## Supplementary Table S3 | Files deposited in the associated repository
 
-All files are deposited in the Zenodo record cited in the Data availability statement of the main manuscript. No public data are redistributed; those are obtained from their original repositories using the accessions given in Methods 4.1.
+All files are deposited at **https://doi.org/10.5281/zenodo.23293108** (version v1.0.0), as cited in the Data availability statement of the main manuscript. No public data are redistributed; those are obtained from their original repositories using the accessions given in Methods 4.1.
 
 **Results**
 

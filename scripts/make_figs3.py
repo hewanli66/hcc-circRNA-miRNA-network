@@ -100,13 +100,13 @@ for r in use:
     if a is None:
         continue
     px = cx + R1 * math.cos(a); py = cy + R1 * math.sin(a)
-    svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-opacity="%.2f" stroke-width="0.8"/>'
+    svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-opacity="%.2f" stroke-width="1"/>'
                % (mx, my, px, py, col, op))
     # gene 点
     a2 = gene_ang.get(r['host_gene'])
     if a2 is not None:
         gx = cx + R2 * math.cos(a2); gy = cy + R2 * math.sin(a2)
-        svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-opacity="%.2f" stroke-width="0.8"/>'
+        svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-opacity="%.2f" stroke-width="1"/>'
                    % (mx, my, gx, gy, col, op))
 
 # circRNA 节点
@@ -170,7 +170,7 @@ if band_cy:
         for t in band_cy:
             t[2] += under
 for name, x, ty in band_cy:
-    svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="#d8c0cc" stroke-width="0.7"/>'
+    svg.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="#d8c0cc" stroke-width="1"/>'
                % (cx + 18, cy, x - 3, ty - 3))
     svg.append(txt(x, ty, name, 10, 'start', '#5a1a3a', 'bold'))
 
@@ -221,10 +221,12 @@ svg2 = ['<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox=
 
 # 三个面板：边数 / miRNA数 / 验证基因命中
 panels = [('Edges', 'n_edges'), ('Distinct miRNAs', 'n_miRNA'), ('Validated genes covered', 'n_val')]
+pmax = {}
 bx, bw, bh = 90, 210, 220
 by = H2 - 150
 mx = 0
 for name, _ in panels:
+    vals = []
     for k, _, _ in TIERS:
         sub = [r for r in rows if r['tier'] == k]
         if name == 'Edges':
@@ -233,7 +235,8 @@ for name, _ in panels:
             v = len(set(r['miRNA'] for r in sub))
         else:
             v = len(set(r['host_gene'] for r in sub) & val)
-        mx = max(mx, v)
+        vals.append(v)
+    pmax[name] = max(vals)          # 各面板独立缩放：第三个面板的 1/4/6 才看得见
 
 for pi, (name, _) in enumerate(panels):
     x0 = bx + pi * (bw + 60)
@@ -247,7 +250,8 @@ for pi, (name, _) in enumerate(panels):
             v = len(set(r['miRNA'] for r in sub))
         else:
             v = len(set(r['host_gene'] for r in sub) & val)
-        hh = v / mx * (bh - 30)
+        # 各面板独立缩放；并给极小值一个最小可见高度（2 px），否则数字贴在基线上
+        hh = max(2.0, v / max(1, pmax[name]) * (bh - 30))
         xx = x0 + 18 + gi * 62
         svg2.append('<rect x="%.1f" y="%.1f" width="46" height="%.1f" fill="%s" fill-opacity="0.85"/>'
                     % (xx, by - hh, hh, col))

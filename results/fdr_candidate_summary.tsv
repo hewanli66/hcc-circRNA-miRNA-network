@@ -1,0 +1,12 @@
+metric	value
+features_tested	92204
+n_pairs	10
+nominal_P05	5649
+BH_FDR05	3
+BH_FDR10	8
+candidate_set	103
+candidate_BH_FDR05	2
+candidate_fails_FDR	101
+candidate_min_FDR	0.0449
+candidate_median_FDR	0.5156
+candidate_max_FDR	0.5156

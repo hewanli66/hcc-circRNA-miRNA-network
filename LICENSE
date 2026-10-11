@@ -10,17 +10,9 @@ and indicate if changes were made.
 The full text of this license is available at:
 https://creativecommons.org/licenses/by/4.0/legalcode
 
-You should have received a copy of the license with this work. If not, see
-https://creativecommons.org/licenses/by/4.0/
-
----
-
-NOTE ON DATA AVAILABILITY
-
-This archive contains only analysis code, derived result tables, figures and
-manuscript materials. It does NOT redistribute any primary data. The primary
-datasets are publicly available and must be obtained from their original
-repositories:
+Note on data: This archive contains derived analysis results only. It does NOT
+redistribute any primary data. The primary datasets are publicly available and
+must be obtained from their original repositories:
 
   GSE122482  —  NCBI Gene Expression Omnibus
   GSE14520   —  NCBI Gene Expression Omnibus

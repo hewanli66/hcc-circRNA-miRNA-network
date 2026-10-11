@@ -1,0 +1,6 @@
+gene	n_cell_pairs_passing	top_cell_type	r_TCGA	r_14520	mean_abs_r	in_feature_set
+CD5	19	Treg_cell	0.8117	0.4634	0.5379	no
+LRCH1	1	Tfh_cell	0.2581	0.2623	0.2602	no
+SMG5	1	Endothelial	-0.2000	-0.2958	0.2479	no
+HSD17B6	2	Endothelial	0.1602	0.3371	0.2393	no
+SREBF2	2	NK_cell	-0.2286	-0.3022	0.2310	no
