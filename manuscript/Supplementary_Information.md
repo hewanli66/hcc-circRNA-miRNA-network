@@ -1,6 +1,6 @@
 # Supplementary Information
 
-**Cross-cohort circRNA–miRNA–mRNA network analysis identifies NT5DC2 and HSD17B6 as prognostic markers in hepatocellular carcinoma**
+**NT5DC2 is an independently prognostic host gene of differentially expressed circRNAs in hepatocellular carcinoma: a cross-cohort circRNA-miRNA-mRNA network analysis**
 
 Wanli He
 School of Medicine, Shangqiu Institute of Technology, Shangqiu, China

@@ -195,7 +195,18 @@ def export_gse14520():
                 age = float(row[idx['Age']])
             except ValueError:
                 continue
-            male = 1 if row[idx['Gender']].strip().lower() == 'male' else 0
+            #🔴 Gender 列在 GSE14520 Extra Supplement 中存的是 **M / F** 单字母，
+            #   不是 "male" / "female"。原代码写的是
+            #       == 'male'
+            #   永远为 False，导致全部 225 例被编码成 male=0，R 里 sex 无方差、
+            #   被自动剔除，还让稿件写出「所有肿瘤样本均为女性」这一明显错误结论
+            #   （真实分布为 211 男 / 31 女，男占 85%，符合 HBV 相关 HCC 特征）。
+            #   审稿人第二轮 Major comment 4 正是质疑这一点。
+            #   这里按单字母判定，并显式排除空值。
+            g_raw = row[idx['Gender']].strip().upper()
+            if g_raw not in ('M', 'F'):
+                continue          # 缺失性别不应默认为女性
+            male = 1 if g_raw == 'M' else 0
             #生存状态缺失或非数值的排除（与 step3_validate14520 口径一致）
             ss = row[idx['Survival status']].strip()
             if ss in ('', 'NA', '.'):

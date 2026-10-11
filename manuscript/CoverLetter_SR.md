@@ -12,7 +12,7 @@ hewanli66@126.com｜ORCID 0009-0002-0829-1909
 
 Dear Editors,
 
-We submit for your consideration the manuscript **"Host genes of differentially expressed circRNAs show consistent cross-cohort prognostic value in hepatocellular carcinoma"** for publication as an Article in *Scientific Reports*.
+We submit for your consideration the manuscript **"NT5DC2 is an independently prognostic host gene of differentially expressed circRNAs in hepatocellular carcinoma: a cross-cohort circRNA-miRNA-mRNA network analysis"** for publication as an Article in *Scientific Reports*.
 
 ## Why this work suits Scientific Reports
 
@@ -26,7 +26,7 @@ Four points may interest your readership:
 
 1. **The claims are graded by what the data actually support.** The survival analyses were performed on linear host-gene mRNAs, not on circRNAs: neither validation cohort contains circRNA expression data, and GSE122482 provides circRNA read counts without matched mRNA quantification. We state this explicitly in the title, abstract and Results, and describe the markers accordingly as host-gene-level mRNA markers, with circRNA-level prognostic value identified as untested.
 
-2. **Multivariable adjustment leaves a single robust candidate.** Of 37 host genes significant in TCGA, 34 showed concordant direction in GSE14520 (76%) and six passed the combined validation criterion. After adjustment for AJCC stage, age and sex, **only NT5DC2 remained significant in both cohorts** (adjusted HR 1.22, P = 0.019; 1.27, P = 0.017) with an essentially unchanged effect size, indicating that its association is not attributable to the clinical covariates. HSD17B6 reached significance in GSE14520 but was borderline in TCGA (P = 0.061); the remaining four lost significance. We report this graded outcome rather than presenting all six as validated markers.
+2. **Multivariable adjustment leaves a single robust candidate.** Of 37 host genes significant in TCGA, 34 showed concordant direction in GSE14520 (76%) and six passed the combined validation criterion. After adjustment for AJCC stage, age and sex, **only NT5DC2 remained significant in both cohorts** (adjusted HR 1.22, P = 0.019; 1.27, P = 0.018) with an essentially unchanged effect size, indicating that its association is not attributable to the clinical covariates; sex itself was not significant in either cohort. HSD17B6 reached significance in GSE14520 but was borderline in TCGA (P = 0.061); the remaining four lost significance. We report this graded outcome rather than presenting all six as validated markers.
 
 3. **We report what multiplicity correction does to the screen.** Across 92,204 circRNA features, 5,649 pass an uncorrected P < 0.05 but only 3 reach BH-FDR < 0.05, and only 2 of our 103 candidates do so. The original rationale—that cross-cohort validation would control the false-positive rate—does not hold, because the validation cohorts test a different hypothesis in different data; we say so and treat the screen as exploratory.
 
