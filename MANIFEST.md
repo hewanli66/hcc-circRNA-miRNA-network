@@ -1,9 +1,9 @@
 # MANIFEST — SHA256 and size of every archived file
 
 193ac70edff0e68bc798fc9504b05275564c16d1dc84af403fa95a83fa47172c          91  .gitignore
-5a25427f3978030bbd93322b23421ce8a3004ebe59d399d45eea422cd59052a7         556  CITATION.cff
+6406a3adad51cc71d98ad3601919de385699b48ae0683897d8477d1af02d78f2         556  CITATION.cff
 5ef41f765039431797af83f58617eb433f79eb5d0682966261b8788d524b4770         862  LICENSE
-3cbca3a3b1aee41a9cff948f7c4a1974f7ed903101b3a2935830d26cde470556        5559  README.md
+678b1c6dcc6e7fa7234610a18a91f12bec6f4dc0e39402d10a54667b0b3e773f        5559  README.md
 bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
 eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
 f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
@@ -20,8 +20,8 @@ bc1b404efc26783e49d818476cfc3df7fdbcd9c874c72ed1e15b5def0cd32345      187540  fi
 3fe5c3de60db241e36b7b9e80bc37b297dc109ec038e9092acc4fbb0ff2bf12c        5024  figures/Fig7_qc_tiers.svg
 1b9f08f2591afaf8f31868fde0e42b61c2251734bcd91b789392aa7d554cfbd5        1045  figures/README_figure_files.md
 d9237bc69f38c834af62365610b0efedda6ee18e7979c9e6de3bc4d1b68e3c5f        7159  manuscript/CoverLetter_SR.md
-2efbd788a5e6ddbab0bb1ea711f634c824416742bbcebc0fc9f8f403cb83bb13       66529  manuscript/SR_manuscript_EN.docx
-0bb7236dd3e3f39066b5d5e0d6c3bb07c9df0000dc1a166933bfb72687f9adba       67438  manuscript/SR_manuscript_EN.md
+da7f99b30010a0d33cb2c8e3a3db54f147d42cf5d7d095079b8c7d0d7a441e25       66532  manuscript/SR_manuscript_EN.docx
+3d5951410ef0249cd8c9c5f48ebcaf9f0fabe1474ebb252ba06001322c8c7560       67450  manuscript/SR_manuscript_EN.md
 9d7b69e936cd9f1a31312a3529179dc2b0eb76e94e36420acdfa24517a53b99e       44913  manuscript/Supplementary_Information.docx
 9ae8fda888e5eaee0cc715bb22acd2522ac8aa8f273dca2aeb7f35ab9b43a7d2       13944  manuscript/Supplementary_Information.md
 ac676cc299d7feb87da2913ca3845f9b5e574550a85533ca4f938af499067d53       22698  results/NT5DC2_mirna_indirect_support.tsv
