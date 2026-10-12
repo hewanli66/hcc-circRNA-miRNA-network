@@ -217,3 +217,5 @@ All files are deposited at **https://doi.org/10.5281/zenodo.23293107** (concept 
 ---
 
 *All quantities reported in this document and in the main manuscript are actual computed values derived from the deposited result files.*
+
+**Use of large language models**: An LLM was used during language editing and formatting only. It did not contribute to the generation of the analysis code, to the selection of statistical methods, to the interpretation of results or to the conclusions; all scripts, commands and derived values were produced and checked by the author.

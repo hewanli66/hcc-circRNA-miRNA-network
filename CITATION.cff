@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite the associated manuscript."
 title: "circRNA-miRNA-mRNA network in hepatocellular carcinoma: reproducible analysis archive"
-version: 1.3.2
-date-released: 2026-10-11
+version: 1.3.3
+date-released: 2026-10-12
 type: dataset
 authors:
   - family-names: He

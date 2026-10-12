@@ -231,7 +231,7 @@ Data retrieval, format handling and file processing were performed in Python 3.1
 
 **Table 1 | Six host genes that passed independent validation**
 
-| Gene | HR (TCGA) | P_cox (TCGA) | P_logrank (TCGA) | HR (GSE14520) | P_cox (14520) | Adjusted HR (TCGA), P | Adjusted HR (14520), P | Interpretation |
+| Gene | HR (TCGA-LIHC) | P_cox (TCGA-LIHC) | P_logrank (TCGA-LIHC) | HR (GSE14520) | P_cox (GSE14520) | Adjusted HR (TCGA-LIHC), P | Adjusted HR (GSE14520), P | Interpretation |
 |---|---|---|---|---|---|---|---|---|
 | **NT5DC2** | 1.536 | 7.49 × 10⁻⁶ | 0.0076 | 1.428 | 9.08 × 10⁻⁴ | **1.388, 0.0004** | **1.267, 0.018** | **Independent in both cohorts** |
 | HSD17B6 | 0.762 | 1.58 × 10⁻³ | 0.075 | 0.678 | 4.20 × 10⁻⁴ | 0.847, 0.052 | 0.801, 0.033 | Supported in GSE14520; borderline in TCGA |
@@ -413,4 +413,4 @@ This study constitutes secondary analysis of publicly available data and involve
 
 **Article type**: Article. **Main text**: approximately 2,100 words (limit 4,500). **Abstract**: 194 words (limit 200). **Display items**: 7 figures and 3 tables (Tables 1–3), plus 6 supplementary tables (S1–S6). **References**: 22.
 
-**Use of large language models**: An LLM was used during manuscript language editing and formatting. All data analysis, result interpretation and conclusions remain the responsibility of the author, who reviewed and verified the content.
+**Use of large language models**: An LLM was used during manuscript language editing and formatting only. It did not contribute to the generation of the analysis code, to the selection of statistical methods, to the interpretation of results or to the conclusions; all scripts, commands and derived values in this manuscript were produced and checked by the author. All data analysis, result interpretation and conclusions remain the responsibility of the author, who reviewed and verified the content.

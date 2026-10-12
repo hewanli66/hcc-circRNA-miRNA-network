@@ -1,9 +1,9 @@
 # MANIFEST — SHA256 and size of every archived file
 
 193ac70edff0e68bc798fc9504b05275564c16d1dc84af403fa95a83fa47172c          91  .gitignore
-f5d815fdf714e499f296c88504eb25f101ec2e28201e0f19612a3d75e12af941         556  CITATION.cff
+5a25427f3978030bbd93322b23421ce8a3004ebe59d399d45eea422cd59052a7         556  CITATION.cff
 5ef41f765039431797af83f58617eb433f79eb5d0682966261b8788d524b4770         862  LICENSE
-1e49784ffccd53747d1d4448f27828a23aedb470d49e3ed16c6a20f28bd84230        5559  README.md
+3cbca3a3b1aee41a9cff948f7c4a1974f7ed903101b3a2935830d26cde470556        5559  README.md
 bc9885f3588d06021d91717c946edcbccf5d4c31e6c4a7743433298d560c1ad7      415411  figures/Fig1_circRNA_volcano.png
 eff21e8c5845f99f7ff7ab5649cb7dfe5c8f403a768dc8ca24643d0ca984ab32       15194  figures/Fig1_circRNA_volcano.svg
 f306effd30e8d9703c22136e712883fa84745bcf400f9546878f6fbf4a8b037f      586655  figures/Fig2_network.png
@@ -18,11 +18,12 @@ bdb48a5ad758734c908cebb106de940aa2a4135901291b4aada1accac589a591      933051  fi
 074fd4947cad88bc0c2c7a92e7668f7057d177acd947f9d1e9279cfbe2c928ea       62309  figures/Fig6_trinetwork.svg
 bc1b404efc26783e49d818476cfc3df7fdbcd9c874c72ed1e15b5def0cd32345      187540  figures/Fig7_qc_tiers.png
 3fe5c3de60db241e36b7b9e80bc37b297dc109ec038e9092acc4fbb0ff2bf12c        5024  figures/Fig7_qc_tiers.svg
+1b9f08f2591afaf8f31868fde0e42b61c2251734bcd91b789392aa7d554cfbd5        1045  figures/README_figure_files.md
 d9237bc69f38c834af62365610b0efedda6ee18e7979c9e6de3bc4d1b68e3c5f        7159  manuscript/CoverLetter_SR.md
-7374983ec4253e24b10a9a6702691d0f96d9d3dcca54c32bb5d31af389f08af2       66437  manuscript/SR_manuscript_EN.docx
-c06f97acf655140af65674ac1230a9e7bb36cae783c7e41eef6fc1970ac478fa       67147  manuscript/SR_manuscript_EN.md
-e3c1d2a2203993758044b9c87328b0b3ea14a29b8689c233e46f8101c65cbe84       44758  manuscript/Supplementary_Information.docx
-9715be62c736fef9120e11186ed5e710a7dddbdbe47f29189a663ab196f760ca       13605  manuscript/Supplementary_Information.md
+2efbd788a5e6ddbab0bb1ea711f634c824416742bbcebc0fc9f8f403cb83bb13       66529  manuscript/SR_manuscript_EN.docx
+0bb7236dd3e3f39066b5d5e0d6c3bb07c9df0000dc1a166933bfb72687f9adba       67438  manuscript/SR_manuscript_EN.md
+9d7b69e936cd9f1a31312a3529179dc2b0eb76e94e36420acdfa24517a53b99e       44913  manuscript/Supplementary_Information.docx
+9ae8fda888e5eaee0cc715bb22acd2522ac8aa8f273dca2aeb7f35ab9b43a7d2       13944  manuscript/Supplementary_Information.md
 ac676cc299d7feb87da2913ca3845f9b5e574550a85533ca4f938af499067d53       22698  results/NT5DC2_mirna_indirect_support.tsv
 749d29be3434afb321f3db6fd476ccce8613e28c43c3a5c5bc529233101d2eed      107780  results/backfill_miRNA.tsv
 9668e6cdef7b3aa0508bd8186d2105bfdfdd9fb8c9e21dfb3c44d77a3ebca0b7        8837  results/candidate_circRNA.tsv
@@ -92,4 +93,4 @@ c1ab0c0a310f91ce49cb29ceb916819eddc94ed20f1c2deb7ea9db8f76c6b65d        8737  sc
 61a5235bd3cf3b7b833b39302d83e1b640d5945228f00fbd24ebf1959081eb3c        4950  scripts/step9_nt5dc2_support.py
 590ebf6cef2e4c5b266f541a3b1f9a96805d954481a9769c45bc82be6006bd25        7876  scripts/step9b_fallback_support.py
 
-Total: 91 files, 17.6 MB
+Total: 92 files, 17.6 MB
